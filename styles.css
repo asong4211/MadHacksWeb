@@ -1,0 +1,72 @@
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.head {
+    height: 480px;
+    width: 100%;
+    padding-top: 200px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.register-button {
+    margin-top: 18px;
+}
+
+.nav {
+    background-color: grey;
+    height: 54px;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.nav-link a {
+    color: #ffffff;
+    display: block;
+    height: 54px;
+    padding-top: 14px;
+}
+
+.nav-link:hover {
+    background-color: #bbbbbb;
+}
+
+.about {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #cccccc;
+}
+
+.about h4 {
+    font-size: 1.5rem;
+}
+
+.faq {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.faq h4 {
+    font-weight: 900;
+    display: block;
+}
+
+.sponsors {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #cccccc;
+    text-align: center;
+}
