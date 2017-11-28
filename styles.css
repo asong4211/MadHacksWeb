@@ -53,7 +53,7 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
-    background-color: #404040;
+    background-color: #393838;
     color: #cccccc;
 }
 
@@ -82,7 +82,7 @@
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #404040;
+    background-color: #393838;
     text-align: center;
 }
 
@@ -119,3 +119,16 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.border {
+    border-bottom: 1px solid white;
+}
+
+.mlh {
+    background-color: #393838;
+    text-align: center;
+   
+}
+
+.mlh img {
+    max-height: 100px;
+}
