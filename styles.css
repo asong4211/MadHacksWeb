@@ -7,36 +7,56 @@
 }
 
 .head {
-    height: 480px;
+    height: 100%;
     width: 100%;
     padding-top: 200px;
     text-align: center;
+    margin-bottom: -54px;
 }
 
 .headerAnim {
     position: absolute;
     top: 0;
-    height: 480px;
+    height: 100%;
 }
 
-.greeting {
-	font-size: 1em;
-	color: white;
+.headerOverlay {
     position: absolute;
-    top: 320px;
+    bottom: 200px;
     width: 100%;
     text-align: center;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.headerTopLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.headerTopLeft h1 {
+    color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Play', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.headerTopLeft h4 {
+    color: #ffffff;
+    font-size: 1em;
 }
 
 .register-button {
     position: absolute;
-    top: 360px;
-    width: 200px;
-    height: 48px;
     left: 50%;
     margin-left: -100px;
+    width: 200px;
+    height: 48px;
     cursor: pointer;
     background-color: black;
     border: solid 2px #aaaaaa;
@@ -51,12 +71,14 @@
 
 .register-button:hover {
     border-color: #b5271e;
+    color: #b5271e;
 }
 
 .nav {
     background-color: #b5271e;
     width: 100%;
     margin-bottom: 0 !important;
+    margin-top: -54px;
     font-family: 'Play', sans-serif;
 }
 
@@ -129,8 +151,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 .marker {
