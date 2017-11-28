@@ -80,6 +80,7 @@
 }
 
 .nav {
+    position: absolute;
     background-color: #b5271e;
     width: 100%;
     margin-bottom: 0 !important;
@@ -99,7 +100,7 @@
 }
 
 .about {
-    margin-top: 0;
+    margin-top: 54px;
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
@@ -137,11 +138,19 @@
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #d6d8d8;
+    background-color: #333333;
     text-align: center;
     margin-bottom: 0 !important;
     font-family: 'Play', sans-serif;
     
+}
+
+.sponsors .column {
+    margin: 0;
+    padding-bottom: 24px;
+    background-color: #d6d8d8;
+    padding: 20px;
+    border: solid 10px #333333;
 }
 
 .sponsors img {
@@ -177,15 +186,16 @@
   font-family: 'Play', sans-serif;
 }
 
+/*
 .border {
     border-bottom: 2px solid white;
-
 }
+*/
 
 .mlh {
     background-color: #d6d8d8;
     text-align: center;
-   
+    padding-bottom: 50px !important; 
 }
 
 .mlh img {
@@ -194,7 +204,7 @@
 
 .footer {
     border-top: 5px solid #b5271e;
-    height: 72px !important;
+    height: 54px !important;
     padding: 0;
     background-color: #282728;
     color: #d6d8d8;
