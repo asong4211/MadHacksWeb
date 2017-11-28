@@ -27,24 +27,24 @@
 }
 
 .register-button {
-    margin-top: 18px;
+    margin-top: 18px; 
 }
 
 .nav {
-    background-color: grey;
+    background-color: #dc1c3c;
     width: 100%;
     margin-bottom: 0 !important;
 }
 
 .nav-link a {
-    color: #ffffff;
+    color: white;
     display: block;
     height: 54px;
     padding-top: 14px;
 }
 
 .nav-link:hover {
-    background-color: #bbbbbb;
+    background-color: #E23551;
 }
 
 .about {
@@ -53,11 +53,16 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
-    background-color: #cccccc;
+    background-color: #404040;
+    color: #cccccc;
 }
 
 .about h4 {
     font-size: 1.5rem;
+}
+
+.about h4 strong {
+    color: white;
 }
 
 .faq {
@@ -77,6 +82,40 @@
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #cccccc;
+    background-color: #404040;
     text-align: center;
 }
+
+.sponsors img {
+    max-height: 50px;
+}
+
+.small {
+    max-height: 50px;
+}
+
+#map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.marker {
+  background-image: url('images/buckyMarker.png');
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+

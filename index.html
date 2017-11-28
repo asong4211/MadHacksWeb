@@ -3,6 +3,8 @@
 <head>
 	<title>MadHacks | Spring 2018</title>
 	<meta charset="UTF-8">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
 	<link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -11,7 +13,7 @@
 		<!--header-->
 		<div class="head has-text-centered">
 			<h1 class="title greeting">Welcome To MadHacks</h1>
-            <div class="register-button button is-primary is-large">Register Now</div>
+            <div class="register-button button is-large">Register Now</div>
 		</div>
 
 		<!--nav-->
@@ -38,10 +40,10 @@
         <!-- About -->
         <div class="about columns">
             <div class="column">
-                <h4><strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon, bringing together participants from all over the US for 24 hours of hacking blah blah blah, lots of text to fill this up we can figure out what we want to say later blah blah blah more</h4>
+                <h4><strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon, bringing together participants from all over the US for 24 hours of hacking. Unlike other hackathons, MadHacks is going to be putting emphasis on the wacky, the original, and the downright impossible!</h4>
             </div>
             <div class="column">
-                picture of map here, or maybe twitter ticker
+                twitter ticker
             </div>
         </div>
 
@@ -89,53 +91,105 @@
             
         </div>
 
+        <!--Map-->
+        <div id='map' style='width: 100%; height: 400px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiY29ubm9yc3RhbXBlciIsImEiOiJjamFpeDM1bXMyMXdrMnFsZTh0dmJmanVxIn0.v2IUgOKPxfRDTlAhaswe0w';
+            var map = new mapboxgl.Map({
+                container: 'map', 
+                style: 'mapbox://styles/connorstamper/cjaixzmwnacd72ro7a1zdxmmh',
+                center: [-89.40, 43.07],
+                zoom: 13,
+            });
+            var geojson = {
+                type: 'FeatureCollection',
+                features: [{
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-89.4036, 43.0718]
+                    },
+                    properties: {
+                        title: 'MadHacks',
+                        description: '1025 W Johnson St, Madison, WI'
+                    }
+                }]
+            };
+            // add markers to map
+            geojson.features.forEach(function(marker) {
+
+            // create a HTML element for each feature
+            var el = document.createElement('div');
+            el.className = 'marker';
+
+            // make a marker for each feature and add to the map
+            new mapboxgl.Marker(el)
+            .setLngLat(marker.geometry.coordinates)
+            .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+            .addTo(map);
+            });
+            // disable map zoom when using scroll
+            map.scrollZoom.disable();
+            //controls
+            map.addControl(new mapboxgl.NavigationControl());
+        </script>
+
         <!-- Sponsors -->
-        <div class="sponsors columns is-multiline">
-            <div class="column is-half">
-                Coca-Cola
+        <div class="sponsors columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <div class="columns is-multiline">
+                    <div class="column is-one-third">
+                        <img src="images/singlewire.png">
+                    </div>
+                    <div class="column is-one-third">
+                        <img src="images/microsoft.png">
+                    </div>
+                    <div class="column is-one-third">
+                        <img src="images/libertyMutual.png">
+                    </div>
+                    <div class="column is-one-third">
+                        <img src="images/widen.png">
+                    </div>
+                    <div class="column is-one-third">
+                        <img src="images/shopbop.png" style="max-height: 55px">
+                    </div>
+                    <div class="column is-one-third">
+                        <img src="images/citiFintech.svg">
+                    </div>
+                    <div class="column is-one-fourth">
+                        <img src="images/warf.png">
+                    </div>
+                    <div class="column is-one-fourth">
+                        <img src="images/epic.png">
+                    </div>
+                    <div class="column is-one-fourth">
+                        <img src="images/americanFamily.png">
+                    </div>
+                    <div class="column is-one-fourth">
+                        <img src="images/perblue.png">
+                    </div>
+                </div>
             </div>
-            <div class="column is-half">
-                Maruchen
-            </div>
-            <div class="column is-one-third">
-                WARF
-            </div>
-            <div class="column is-one-third">
-                Other company
-            </div>
-            <div class="column is-one-third">
-                Other other company
-            </div>
-            <div class="column is-one-third">
-                WARF
-            </div>
-            <div class="column is-one-third">
-                Other company
-            </div>
-            <div class="column is-one-third">
-                Other other company
-            </div>
-            <div class="column is-one-fourth">
-                WARF
-            </div>
-            <div class="column is-one-fourth">
-                Other company
-            </div>
-            <div class="column is-one-fourth">
-                Other other company
-            </div>
-            <div class="column is-one-fourth">
-                Boring Company
-            </div>
+            <div class="column"></div>
         </div>
         <div class="sponsors columns">
-            <div class="column is-two-thirds has-text-centered">
-                Find Out More About Our Sponsorship Tiers
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <div class="columns">
+                    <div class="column is-one-half" style="color: white;">
+                        Find Out More About Our Sponsorship
+                    </div>
+                    <div class="column">
+                        <div class="button">Sponsor</div>
+                    </div>
+                </div>
             </div>
-            <div class="column is-one-third ">
-                <div class=" button is-primary is-large">Sponsorship</div>
-            </div>
+            <div class="column"></div>
+            
         </div>
+            
     </div>
 </body>
 </html>
