@@ -11,27 +11,48 @@
     width: 100%;
     padding-top: 200px;
     text-align: center;
-    background-image: url("images/headerBackground.jpg");
-    -webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	background-attachment: fixed;
-  	background-position: center;
+}
+
+.headerAnim {
+    position: absolute;
+    top: 0;
+    height: 480px;
 }
 
 .greeting {
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	font-size: 2.5em;
+	font-size: 1em;
 	color: white;
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .register-button {
-    margin-top: 18px; 
+    position: absolute;
+    top: 360px;
+    width: 200px;
+    height: 48px;
+    left: 50%;
+    margin-left: -100px;
+    cursor: pointer;
+    background-color: black;
+    border: solid 2px #aaaaaa;
+    border-radius: 2px;
+    font-size: 0.9em !important;
+    text-transform: uppercase;
+    padding-top: 10px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.register-button:hover {
+    border-color: #b5271e;
 }
 
 .nav {
-    background-color: #dc1c3c;
+    background-color: #b5271e;
     width: 100%;
     margin-bottom: 0 !important;
 }
@@ -44,7 +65,7 @@
 }
 
 .nav-link:hover {
-    background-color: #E23551;
+    background-color: #962018;
 }
 
 .about {
@@ -53,7 +74,7 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
-    background-color: #393838;
+    background-color: #262626;
     color: #cccccc;
 }
 
@@ -82,7 +103,7 @@
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #393838;
+    background-color: #262626;
     text-align: center;
 }
 
@@ -124,7 +145,7 @@
 }
 
 .mlh {
-    background-color: #393838;
+    background-color: #262626;
     text-align: center;
    
 }
