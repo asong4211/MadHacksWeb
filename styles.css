@@ -38,6 +38,11 @@
     text-align: left;
 }
 
+.headerTopLeft img {
+    height: 34px;
+    margin-right: 10px;
+}
+
 .headerTopLeft h1 {
     color: #ffffff;
     text-transform: uppercase;
@@ -48,7 +53,7 @@
 
 .headerTopLeft h4 {
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .register-button {
@@ -189,7 +194,8 @@
 
 .footer {
     border-top: 5px solid #b5271e;
-    height: 50px !important;
+    height: 72px !important;
+    padding: 0;
     background-color: #282728;
     color: #d6d8d8;
     font-family: 'Play', sans-serif;
