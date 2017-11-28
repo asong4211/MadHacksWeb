@@ -25,16 +25,30 @@
     bottom: 200px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0,0,0,0.5);
     height: 150px;
     padding-top: 30px;
 }
 
-.greeting {
-	font-size: 1em;
-	color: white;
-    text-align: center;
+.headerTopLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.headerTopLeft h1 {
+    color: #ffffff;
     text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.headerTopLeft h4 {
+    color: #ffffff;
+    font-size: 1em;
 }
 
 .register-button {
@@ -52,10 +66,12 @@
     padding-top: 10px;
     color: #ffffff;
     font-weight: 400;
+    font-family: 'Play', sans-serif;
 }
 
 .register-button:hover {
     border-color: #b5271e;
+    color: #b5271e;
 }
 
 .nav {
@@ -63,6 +79,7 @@
     width: 100%;
     margin-bottom: 0 !important;
     margin-top: -54px;
+    font-family: 'Play', sans-serif;
 }
 
 .nav-link a {
@@ -82,8 +99,9 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
-    background-color: #262626;
+    background-color: #282728;
     color: #cccccc;
+    font-family: 'Play', sans-serif;
 }
 
 .about h4 {
@@ -99,6 +117,9 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
+    background-color: #d6d8d8;
+    margin-bottom: 0 !important;
+    font-family: 'Play', sans-serif;
 }
 
 .faq h4 {
@@ -111,8 +132,11 @@
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #262626;
+    background-color: #d6d8d8;
     text-align: center;
+    margin-bottom: 0 !important;
+    font-family: 'Play', sans-serif;
+    
 }
 
 .sponsors img {
@@ -127,7 +151,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 100%; 
 }
 
 .marker {
@@ -145,19 +169,28 @@
 
 .mapboxgl-popup-content {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Play', sans-serif;
 }
 
 .border {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
+
 }
 
 .mlh {
-    background-color: #262626;
+    background-color: #d6d8d8;
     text-align: center;
    
 }
 
 .mlh img {
     max-height: 100px;
+}
+
+.footer {
+    border-top: 5px solid #b5271e;
+    height: 50px !important;
+    background-color: #282728;
+    color: #d6d8d8;
+    font-family: 'Play', sans-serif;
 }
