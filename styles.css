@@ -84,8 +84,9 @@
     background-color: #b5271e;
     width: 100%;
     margin-bottom: 0 !important;
-    margin-top: -54px;
+    margin-top: -59px;
     font-family: 'Play', sans-serif;
+    border-top: solid 5px #4f0f0c;
 }
 
 .nav-link a {
@@ -100,14 +101,24 @@
 }
 
 .about {
-    margin-top: 54px;
-    padding-top: 40px;
+    margin-top: 59px;
+    padding-top: 60px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
-    background-color: #282728;
-    color: #cccccc;
+    padding-bottom: 70px;
+    background-color: #222222;
+    color: #ffffff;
     font-family: 'Play', sans-serif;
+    margin-bottom: 0 !important;
+    border-top: solid 5px #111;
+}
+
+.twitter {
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    padding-top: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 .about h4 {
@@ -119,13 +130,21 @@
 }
 
 .faq {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
     background-color: #d6d8d8;
     margin-bottom: 0 !important;
+    margin-top: 0 !important;
     font-family: 'Play', sans-serif;
+    border-top: solid 5px #888;
+}
+
+.faq h2 {
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .faq h4 {
@@ -133,16 +152,20 @@
     display: block;
 }
 
+.faq .column {
+    margin-bottom: 20px;
+}
+
 .sponsors {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #333333;
+    padding-bottom: 80px;
+    background-color: #222222;
     text-align: center;
     margin-bottom: 0 !important;
-    font-family: 'Play', sans-serif;
-    
+    font-family: 'Play', sans-serif; 
+    border-top: solid 5px #111;
 }
 
 .sponsors .column {
@@ -150,11 +173,25 @@
     padding-bottom: 24px;
     background-color: #d6d8d8;
     padding: 20px;
-    border: solid 10px #333333;
+    border: solid 10px #222222;
+    cursor: pointer;
 }
 
 .sponsors img {
     max-height: 50px;
+}
+
+.sponsors h4 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.yourSponsor h3 {
+    font-weight: 900;
+    font-size: 1.3em;
 }
 
 .small {
@@ -166,13 +203,14 @@
     top: 0;
     bottom: 0;
     width: 100%; 
+    border-top: solid 5px #1d2330;
 }
 
 .marker {
   background-image: url('images/buckyMarker.png');
   background-size: cover;
   width: 25px;
-  height: 25px;
+  height: 35px;
   border-radius: 0;
   cursor: pointer;
 }
@@ -203,10 +241,13 @@
 }
 
 .footer {
-    border-top: 5px solid #b5271e;
     height: 54px !important;
-    padding: 0;
-    background-color: #282728;
-    color: #d6d8d8;
+    background-color: #b5271e;
+    color: #ffffff;
     font-family: 'Play', sans-serif;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    border-top: solid 5px #4f0f0c;
 }
