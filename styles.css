@@ -87,6 +87,7 @@
     margin-top: -59px;
     font-family: 'Play', sans-serif;
     border-top: solid 5px #4f0f0c;
+
 }
 
 .nav-link a {
@@ -113,14 +114,20 @@
     border-top: solid 5px #111;
 }
 
-.twitter {
-    background-color: rgba(255,255,255,0.2);
+
+/* .twitter {
+
     text-align: center;
-    padding-top: 70px;
+    padding-top: 30px;
     text-transform: uppercase;
     font-weight: 900;
-}
+} */
 
+.about h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px
+}
 .about h4 {
     font-size: 1.5rem;
 }
@@ -139,12 +146,16 @@
     margin-top: 0 !important;
     font-family: 'Play', sans-serif;
     border-top: solid 5px #888;
+    border-bottom: solid 5px #888;
+
 }
 
 .faq h2 {
     font-size: 2em;
     font-weight: 900;
     margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .faq h4 {
@@ -156,6 +167,92 @@
     margin-bottom: 20px;
 }
 
+
+
+.schedule{
+    background-color:#222222;
+    font-family:'Play',sans-serif;
+    padding-top:60px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom: 70px;
+    color:#ffffff;
+}
+
+.schedule h2{
+    font-size:2.3rem;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.scheduleList{
+    text-align:left;
+}
+.schedule ul{
+    font-size:1.5rem;
+    padding-left:20px;
+}
+
+.schedule .ulContent{
+    float: left;
+    position: relative;
+    left:50%
+}
+
+.schedule .listContent{
+    float:left;
+    position: relative;
+    left: -50%;
+}
+
+.schedule li{
+    text-align:left;
+}
+.schedule img{
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+    margin-top:30px;
+}
+
+.schedule img:hover{
+    filter:none;
+     -webkit-transform: scale(1.07);
+}
+
+
+
+
+.workshops{
+    background-color:#d6d8d8;
+    font-family:'Play',sans-serif;
+    padding-top:60px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom: 70px;
+}
+
+
+.workshops h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.workshops .workshop-contents{
+    padding:40px;
+    line-height: 1.7;
+
+}
+.workshops h3{
+    font-size:1.3em;
+}
+.workshops h4{
+    font-size:1.3em;
+}
+.workshops p{
+    font-size:1.1em;
+}
+
 .sponsors {
     padding-left: 40px;
     padding-right: 40px;
@@ -164,7 +261,7 @@
     background-color: #222222;
     text-align: center;
     margin-bottom: 0 !important;
-    font-family: 'Play', sans-serif; 
+    font-family: 'Play', sans-serif;
     border-top: solid 5px #111;
 }
 
@@ -179,6 +276,12 @@
 
 .sponsors img {
     max-height: 50px;
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+}
+
+.sponsors img:hover{
+    filter:none;
 }
 
 .sponsors h4 {
@@ -189,9 +292,10 @@
     text-transform: uppercase;
 }
 
-.yourSponsor h3 {
+.sponsors h3 {
+    color:  #ffffff;
     font-weight: 900;
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .small {
@@ -202,7 +306,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    width: 100%; 
+    width: 100%;
     border-top: solid 5px #1d2330;
 }
 
@@ -233,7 +337,7 @@
 .mlh {
     background-color: #d6d8d8;
     text-align: center;
-    padding-bottom: 50px !important; 
+    padding-bottom: 50px !important;
 }
 
 .mlh img {
@@ -250,4 +354,11 @@
     padding-right: 40px;
     padding-bottom: 0px;
     border-top: solid 5px #4f0f0c;
+}
+
+.footer a{
+    color:white;
+}
+.footer .a:visited{
+    text-decoration: none;
 }

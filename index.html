@@ -4,10 +4,14 @@
 	<title>MadHacks | Spring 2018</title>
 	<meta charset="UTF-8">
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <script src="typeEffect.js" type="./script"></script>
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
-	<link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+		<link rel="shortcut icon" href="images/favicon.png">
+
 </head>
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 <body>
@@ -22,8 +26,8 @@
             </div>
             <div class="headerTopLeft">
                 <h1><img src="images/MadHacks.png">MadHacks <span style="color: #b5271e">2018</span></h1>
-                <h4>University of Wisconsin, Madison</h4>
-                <h4>February 31st, 2018</h4>
+                <h4>CS 1240 @University of Wisconsin, Madison</h4>
+                <h4>8:30am - 10:00 pm, April 7th 2018</h4>
             </div>
 		</div>
 
@@ -31,27 +35,40 @@
 		<div class="nav columns is-gapless">
             <div class="column"></div>
             <div class="column has-text-centered nav-link">
+                <a href="#about">About</a>
+            </div>
+            <div class="column has-text-centered nav-link">
                 <a href="#faq">F.A.Q.</a>
+            </div>
+            <div class="column has-text-centered nav-link">
+                <a href="#schedule">Schedule</a>
+            </div>
+            <div class="column has-text-centered nav-link">
+                <a href="#ws">Workshops</a>
             </div>
             <div class="column has-text-centered nav-link">
                 <a href="#sponsors">Sponsors</a>
             </div>
             <div class="column has-text-centered nav-link">
-                <a href="#contact">Contact</a>
+                <a href="https://madhacks-2018.typeform.com/to/NI8CP7" >Contact</a>
             </div>
-            <div class="column has-text-centered nav-link">
-                <a href="">Credits</a>
+
+            <div class="column">
             </div>
-            <div class="column"></div>
 		</div>
 
         <!-- About -->
-        <div class="about columns">
-            <div class="column">
-                <h4><strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon, bringing together participants from all over the US for 24 hours of hacking. Unlike other hackathons, MadHacks is going to be putting emphasis on the wacky, the original, and the downright impossible!</h4>
+        <div class="about columns" id ="about">
+            <div class="column" >
+                <h2> About </h2>
+                <h4><strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon,
+                    bringing together participants from all over the US for 24 hours of hacking. Unlike other hackathons,
+                    MadHacks is going to be putting emphasis on the wacky, the original, and the downright impossible!</h4>
+                <!-- <div id="typedtext"></div> -->
             </div>
             <div class="column twitter">
-                Twitter
+                <a class="twitter-timeline" data-width="800" data-height="300" data-theme="dark" data-link-color="#222222" href="https://twitter.com/MadHacksUW?ref_src=twsrc%5Etfw">Tweets by MadHacksUW</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
 
@@ -60,43 +77,130 @@
             <h2>Frequently Asked Questions</h2>
             <div class="columns is-multiline">
             <div class="column is-one-third faq-item">
-                <h4>When is the deadline for registration?</h4>
-                <p>Janovembuary 82nd, although it's debatable and you should check back here for more information.</p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>What is a hackathon?</h4>
-                <p>The next MadHacks event will take place in the spring of 2018. The exact date is TBD.</p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>What if I don't know how to code?</h4>
-                <p>Come to MadHacks! Coding is fun, creative, and an important skill, and Madhacks is the perfect way to learn. We have mentors to help guide you.</p>
+                <h4>What’s a hackathon? </h4>
+                <p> Hackathon is an event where students gather together to work on a software or hardware project. Madhacks Spring 2018 will be a 12 hours hackathon.
+                    If this is your first time attending, check out our hackathon veteran Spencer’s
+                    medium post on <a href ="https://medium.com/@spencerfricke/how-to-do-hackathons-4a96207d5d3d">How to Do Hackathons.</a> </p>
             </div>
             <div class="column is-one-third faq-item">
                 <h4>Do I need a team?</h4>
-                <p>If you already have a team of 2-4 people, great! Otherwise there is an opportunity for people to joing a team if they need one.</p>
+                <p>We encourage students to work with a team of 2 - 4 people but you can work individually as well. If you don't have a team yet,
+                    there will be a team formation after the opening ceremony. If you want to find a team before the event, join the #team-formation slack channel.</p>
+            </div>
+
+            <div class="column is-one-third faq-item">
+                <h4>Who can participate?</h4>
+                <p>We welcome all Madison area undergraduate and graduate students of all backgrounds. You don’t need to be a Computer Science or Engineering major to attend.
+                     If you don't know how to code, we will have workshops throughout the day to teach you how to code!</p>
             </div>
             <div class="column is-one-third faq-item">
-                <h4>What should I bring?</h4>
-                <p>You'll need to bring your laptop, phone, chargers, and a valid photo ID for checking in. Some may want to bring a pillow and sleeping bag.</p>
+                <h4>What do I need to bring?</h4>
+                <p>You need to bring a photo ID to check in. You should also bring a laptop, chargers, and anything else you will need for a 12 hours hackathon.</p>
             </div>
             <div class="column is-one-third faq-item">
-                <h4>Will there be food?</h4>
-                <p>Yes, lots of it.</p>
+                <h4>How much does it cost to attend?</h4>
+                <p>Admission to Madhacks is completely free. We will also be providing breakfast, lunch and dinner!
+                There will also be workshops and activities throughout the event.</p>
             </div>
             <div class="column is-one-third faq-item">
-                <h4>What if I have dietary concerns?</h4>
-                <p>If you have dietary concerns please <a href="#">let us know</a></p>
+                <h4>What else do I need to know? </h4>
+                <p>Please review the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. Please also be aware that by attending this event, you agree to the MLH Data Sharing Notice:
+                    <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a>
+                     and the <a href="https://mlh.io/privacy">MLH Privacy Policy</a></p>
+            </div>
+            <div class="column is-one-third faq-item">
+                <h4>Will there be any prizes?</h4>
+                <p>Yes! Stay tuned for more details about the prizes. </p>
+            </div>
+            <div class="column is-one-third faq-item">
+                <h4>What if I need special accomodations?</h4>
+                <p>We try our best to accomodate students who have spcial needs. Please let us know if you need spcial accomodations. </p>
+            </div>
+            <div class="column is-one-third faq-item">
+                <h4>Still have questions?</h4>
+                <p>You can <a href="https://madhacks-2018.typeform.com/to/NI8CP7" >contact us </a>if you still have any questions. </p>
             </div>
             </div>
         </div>
 
+        <!-- Schedule -->
+        <div class="columns schedule" id="schedule">
+
+            <div class ="column">
+                <h2>Schedule</h2>
+                <div class ="ulContent">
+                <ul>
+                    <div class="listContent">
+                        <li>8:30am: Check in</li>
+                        <li>9:00am: Opening Ceremony </li>
+                        <li>9:15am: Hacking begins + Team formation</li>
+                        <li> 1:00pm: Lunch </li>
+                        <li> 6:00pm: Dinner </li>
+                        <li> 9:00pm: Hacking Ends </li>
+                        <li> 9:15am: Judging Begins</li>
+                        <li> 10:00pm: Closing Ceremony</li>
+                    </div>
+
+                </ul>
+                </div>
+          </div>
+            <div class="column">
+                <img src="./images/mh.png" alt="madhacks logo"/>
+            </div>
+
+        </div>
+
+
+
+        <!-- Workshops -->
+
+        <div class ="workshops" id="ws">
+            <h2><strong>Workshops</strong>  </h2>
+            <div class ="workshop-contents">
+            <h3> 1. Web development basics </h3>
+            <h4> Speaker: STS Trainer </h4>
+            <h4> Time: TBD </h4>
+            <p>
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+            </p>
+            <br />
+            <h3> 2. Build IOS and Android apps using Inoic </h3>
+            <h4> Speaker: Ionic </h4>
+            <h4> Time: TBD </h4>
+            <p>
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+            </p>
+            <br  />
+            <h3> 3. Backend Web Development using Node.js </h3>
+            <h4> Speaker: Spencer Fricke</h4>
+            <h4> Time: TBD </h4>
+            <p>
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+            </p>
+            <br />
+            <h3> 4. Bitcoin and Blockchains 101 </h3>
+            <h4> Speaker: Sid Ramesh, President of Badger Blockchain </h4>
+            <h4> Time: TBD </h4>
+            <p>
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Details about this.Details about this.Details about this.Details about this.Details about this.
+            </p>
+            </div>
+        </div>
 
         <!--Map-->
         <div id='map' style='width: 100%; height: 700px;'></div>
         <script>
             mapboxgl.accessToken = 'pk.eyJ1IjoiY29ubm9yc3RhbXBlciIsImEiOiJjamFpeDM1bXMyMXdrMnFsZTh0dmJmanVxIn0.v2IUgOKPxfRDTlAhaswe0w';
             var map = new mapboxgl.Map({
-                container: 'map', 
+                container: 'map',
                 style: 'mapbox://styles/connorstamper/cjaixzmwnacd72ro7a1zdxmmh',
                 center: [-89.40, 43.07],
                 zoom: 13,
@@ -107,11 +211,11 @@
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-89.4036, 43.0718]
+                        coordinates: [-89.406318, 43.071309]
                     },
                     properties: {
                         title: 'MadHacks',
-                        description: '1025 W Johnson St, Madison, WI'
+                        description: '1210 W Dayton St, Madison, WI 53706'
                     }
                 }]
             };
@@ -138,13 +242,10 @@
         <!-- Sponsors -->
         <div class="sponsors" id="sponsors">
             <!-- <div class="column"></div> -->
-            <h4>Past Sponsors</h4>
+            <h4>Sponsors</h4>
             <div class="columns is-multiline">
-                <div class="column is-one-half">
-                    <div class="yourSponsor">
-                        <h3>Interested in sponsoring MadHacks?</h4>
-                        <h5> <a href="sponsor.pdf">Check this out.</a></h4>
-                    </div>
+                <div class="column is-one-third">
+                    <img src="images/google.png">
                 </div>
                 <div class="column is-one-third">
                     <img src="images/singlewire1.png">
@@ -180,6 +281,11 @@
                     <img src="images/mlhLogo1.png">
                 </div>
             </div>
+
+            <h3>Interested in sponsoring Madhacks? </h3>
+            <h3><a href="sponsor.pdf">Check this out</a></h3>
+
+
         </div>
         <!--
         <div class="sponsors columns">
@@ -201,19 +307,25 @@
         <!--footer-->
         <div class="footer columns has-text-centered" id="contact">
             <div class="column is-one-third" style="text-align: left;">
-                <a href="mailto:team@madhack.org" style="color: #ffffff; font-weight: 900">Questions or concerns?</a>
+                <a onclick="topFunction()" class="topLink">Back to the Top</a>
             </div>
             <div class="column is-one-third" style="text-align: center">
                 <a href="https://twitter.com/MadHacksUW"><img src="images/twitter.png" style="height: 25px"></a>
                 <a href="https://www.facebook.com/MadHacksUW/"><img src="images/facebook1.png" style="height: 25px"></a>
             </div>
             <div class="column is-one-third" style="text-align: right">
-                &copy 2017 MadHacks
+                <a onclick="topFunction()">&copy 2018 MadHacks</a>
             </div>
         </div>
-            
+
     </div>
 
     <script type="text/javascript" src="js/header_anim.js"></script>
+    <script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>
