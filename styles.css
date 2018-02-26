@@ -74,6 +74,9 @@
     font-family: 'Play', sans-serif;
 }
 
+.body{
+    overflow:scroll;
+}
 .register-button:hover {
     border-color: #b5271e;
     color: #b5271e;
