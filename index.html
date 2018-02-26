@@ -4,7 +4,6 @@
 	<title>MadHacks | Spring 2018</title>
 	<meta charset="UTF-8">
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-    <script src="typeEffect.js" type="./script"></script>
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
 		<link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
@@ -63,11 +62,14 @@
         <!-- About -->
         <div class="about columns" id ="about">
             <div class="column" >
-                <h2> About Us </h2>
+                <h2> MADHACKS </h2>
                 <h4><strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon,
                     bringing together participants from all over the US for 24 hours of hacking. Unlike other hackathons,
                     MadHacks is going to be putting emphasis on the wacky, the original, and the downright impossible!</h4>
-                <!-- <div id="typedtext"></div> -->
+                </br>
+                <h4> This spring, we will be having a 12 hours, begginner-friendly mini-hackathon that give new hackers
+                    a glimpse into what a real hackathon is like. Although it is a shorter hackathon,
+                    we will still be having mentors, workshops and prizes!</h4>
             </div>
             <div class="column twitter">
                 <a class="twitter-timeline" data-width="800" data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/MadHacksUW?ref_src=twsrc%5Etfw">Tweets by MadHacksUW</a>
@@ -130,7 +132,7 @@
         <div class="columns schedule" id="schedule">
 
             <div class ="column">
-                <h2>Schedule</h2>
+                <h2>SCHEDULE</h2>
                 <div class ="ulContent">
                 <ul>
                     <div class="listContent">
@@ -158,42 +160,46 @@
         <!-- Workshops -->
 
         <div class ="workshops" id="ws">
-            <h2><strong>Workshops</strong>  </h2>
+            <h2><strong>WORKSHOPS</strong>  </h2>
             <div class ="workshop-contents">
             <h3> 1. Web development basics </h3>
             <h4> Speaker: STS Trainer </h4>
             <h4> Time: TBD </h4>
             <p>
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
+                If you are planning on making a website, this workshop is for you!
+                We will be working with the Software Traning for Students (STS)
+                to bring a workshop to teach hackers the basics of html, css, javascript and more.
+                More details will be released as we approach the event.
             </p>
             <br />
-            <h3> 2. Build IOS and Android apps using Inoic </h3>
-            <h4> Speaker: Ionic </h4>
+            <h3> 2. Build IOS and Android apps</h3>
+            <h4> Speaker: TBD </h4>
             <h4> Time: TBD </h4>
             <p>
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
+                Ever wonder how to build a cool mobile app? If you do, this workshop is for you!
+                We will be having a workshop to teach students how to build ios and android apps.
+                Stay tuned for more details about the speaker!
             </p>
             <br  />
             <h3> 3. Backend Web Development using Node.js </h3>
             <h4> Speaker: Spencer Fricke</h4>
             <h4> Time: TBD </h4>
             <p>
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
+                If you want to learn how backend development works, this workshop is for you!
+                Node.js is an open-source project that can run javascript codes on the server-side.
+                Make sure you have npm and node installed before the workshop.
+                <br/>Installation details
+                can be found <a href="https://nodejs.org/en/">here</a>
             </p>
             <br />
             <h3> 4. Bitcoin and Blockchains 101 </h3>
             <h4> Speaker: Sid Ramesh, President of Badger Blockchain </h4>
             <h4> Time: TBD </h4>
             <p>
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
-                Details about this.Details about this.Details about this.Details about this.Details about this.
+                If you are interested in learning the history and the future of bitcoins, as
+                well as the technologies that power behind bitcoin, this workshop is for you!
+                Sid Ramesh is the president of Badger Blockchain and will be giving a tech talk
+                on this topic! Stay tuned for more details!
             </p>
             </div>
         </div>
@@ -281,12 +287,12 @@
                     <img src="images/perblue1.png">
                 </div>
                 <div class="column is-one-third">
-                    <img src="images/mlhLogo1.png">
+                    <img src="images/mlh-logo.png">
                 </div>
             </div>
 
             <h3>Interested in sponsoring Madhacks? </h3>
-            <h3><a href="sponsor.pdf">Check this out</a></h3>
+            <h3><a href="./sponsor.pdf">Check this out</a></h3>
 
 
         </div>
@@ -325,6 +331,7 @@
 
     <script type="text/javascript" src="js/header_anim.js"></script>
     <script>
+    //this function is used to scroll back to the top
     function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
