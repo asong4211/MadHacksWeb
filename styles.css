@@ -316,10 +316,10 @@
 }
 
 .marker {
-  background-image: url('images/buckyMarker.png');
+  background-image: url('images/madHacks.png');
   background-size: cover;
-  width: 25px;
-  height: 35px;
+  width: 43px;
+  height: 37px;
   border-radius: 0;
   cursor: pointer;
 }
