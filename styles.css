@@ -331,7 +331,7 @@
    
 }
 .team .name{
-    font-size:2em;
+    font-size:1.6em;
     text-decoration: underline;
     
 }
@@ -343,7 +343,7 @@
 
 .team h5{
     color:white;
-    font-size:0.7em;
+    font-size:0.5em;
 }
 
 .team .image-container {
@@ -376,6 +376,7 @@
 
 .team img{
     border-radius: 50%;
+    filter:grayscale(30%);
 }
 
 
@@ -445,3 +446,4 @@
 .footer .a:visited{
     text-decoration: none;
 }
+#loadOverlay{display: none;}
