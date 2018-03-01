@@ -35,11 +35,11 @@ function Basic(type) {
 }
 Basic.prototype.toMiddleMat = function() {
     this.wireframe = new THREE.Object3D();
-    this.material = new THREE.MeshPhongMaterial({ color: 0xb5271e, 
-                                                  emissive: 0x440d0b, 
-                                                  side: THREE.DoubleSide, 
-                                                  flatShading: true, 
-                                                  transparent: true, 
+    this.material = new THREE.MeshPhongMaterial({ color: 0xb5271e,
+                                                  emissive: 0x440d0b,
+                                                  side: THREE.DoubleSide,
+                                                  flatShading: true,
+                                                  transparent: true,
                                                   opacity: 1.0 });
     this.lineMaterial = new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.5 });
     this.wireframe.add( new THREE.LineSegments(this.geo, this.lineMaterial) );
@@ -63,7 +63,7 @@ function init() {
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize( window.innerWidth, window.innerHeight - 54 );
-  
+
     scene = new THREE.Scene();
     camera.lookAt(scene.position);
 
@@ -77,7 +77,7 @@ function init() {
     lights[2] = new THREE.PointLight(0xffffff, 1, 0);
     lights[2].position.set(-20, -40, -20);
     scene.add(lights[2]);
-    
+
     shapes = initAnimation();
     shapes.left.addToScene();
     shapes.right.addToScene();
@@ -141,7 +141,7 @@ function animMorph(key) {
     else { shapes_i[1] = (shapes_i[1] + shapes_i[2]) % 5; }
     next_shape = new Basic(getRandomI());
 
-    
+
     shapes_i[key == "left" ? 0 : 2] = next_shape.type;
     shapes[key].removeFromScene();
     shapes[key] = next_shape;
@@ -193,7 +193,7 @@ function onDocumentMouseMove( event ) {
 
 function onDocumentTouchStart( event ) {
     if ( event.touches.length === 1 ) {
-        event.preventDefault();
+        // event.preventDefault();
         mouseX = event.touches[ 0 ].pageX - windowHalfX;
         mouseY = event.touches[ 0 ].pageY - windowHalfY;
     }
@@ -201,7 +201,7 @@ function onDocumentTouchStart( event ) {
 
 function onDocumentTouchMove( event ) {
     if ( event.touches.length === 1 ) {
-        event.preventDefault();
+        // event.preventDefault();
         mouseX = event.touches[ 0 ].pageX - windowHalfX;
         mouseY = event.touches[ 0 ].pageY - windowHalfY;
     }
@@ -226,10 +226,10 @@ function animate() {
         if (Math.abs(shapes[key].wireframe.position.x) < 1.5 && key != "middle") {
             shapes.middle.fade = -0.05;
         }
-        if (shapes[key].fade != 0.0) { 
+        if (shapes[key].fade != 0.0) {
             if (shapes[key].material.opacity > 1) { shapes[key].material.opacity = 1; shapes[key].fade = 0.0; }
-            else if (shapes[key].material.opacity < 0) { shapes[key].material.opacity = 0; shapes[key].fade = 0.0; } 
-            else { 
+            else if (shapes[key].material.opacity < 0) { shapes[key].material.opacity = 0; shapes[key].fade = 0.0; }
+            else {
                 shapes[key].material.opacity += shapes[key].fade;
                 if (shapes[key].lineMaterial) { shapes[key].lineMaterial.opacity += (shapes[key].fade / 2); }
             }
