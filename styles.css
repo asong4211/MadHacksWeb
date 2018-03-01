@@ -4,6 +4,7 @@
     right: 0;
     left: 0;
     bottom: 0;
+    overflow: scroll;
 }
 
 .head {
@@ -328,12 +329,12 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     color:white;
-   
+
 }
 .team .name{
     font-size:1.6em;
     text-decoration: underline;
-    
+
 }
 .team .columns{
     padding-top:30px;
@@ -358,7 +359,7 @@
     height: 100%;
     display: none;
     color: #FFF;
-    
+
 }
 .team .image-container:hover .after {
     border-radius: 50%;
