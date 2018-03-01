@@ -6,6 +6,9 @@
     bottom: 0;
 }
 
+.scroll{
+    overflow: scroll;;
+}
 .head {
     height: 100%;
     width: 100%;
