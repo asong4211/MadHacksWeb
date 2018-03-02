@@ -210,9 +210,11 @@ function onDocumentTouchMove( event ) {
 function animate() {
     requestAnimationFrame( animate );
 
-    camera.position.x += Math.sqrt(Math.abs( mouseX - camera.position.x )) * .01 * ((mouseX > 0) ? 1 : -1);
-    camera.position.y -= Math.sqrt(Math.abs( - mouseY - camera.position.y )) * .01 * ((mouseY > 0) ? 1 : -1);
-    camera.lookAt( scene.position );
+    if (mouseY + window.scrollY + 250 <= (window.innerHeight / 2)) { // Horrible magic constant...can't explain it
+        camera.position.x += Math.sqrt(Math.abs( mouseX - camera.position.x )) * .01 * ((mouseX > 0) ? 1 : -1);
+        camera.position.y -= Math.sqrt(Math.abs( - mouseY - camera.position.y )) * .01 * ((mouseY > 0) ? 1 : -1);
+        camera.lookAt( scene.position );
+    }
 
     for (var key in shapes) {
         shapes[key].wireframe.rotation.x += xrot;
