@@ -3,7 +3,7 @@
 <head>
 	<title>MadHacks | Spring 2018</title>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">6
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
@@ -35,30 +35,30 @@
 
 
 		<!--nav-->
-		<div class="nav columns is-gapless">
+		<div class="nav columns is-gapless is-mobile" id ="navBar">
             <div class="column"></div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#about">About Us</a>
             </div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#faq">F.A.Q.</a>
             </div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#schedule">Schedule</a>
             </div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#ws">Workshops</a>
             </div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#sponsors">Sponsors</a>
             </div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#team">Team</a>
             </div>
-            <div class="column has-text-centered nav-link">
+            <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="https://madhacks-2018.typeform.com/to/NI8CP7" >Contact</a>
             </div>
-			<div class="column has-text-centered nav-link">
+			<div class="column has-text-centered is-hidden-mobile nav-link">
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdKQfzy-b_TVmTXZOd1FKAl9baBXUzd_J6Gpc8AtbGZ8iODGw/viewform">
                          Volunteer</a>
 			</div>
@@ -145,16 +145,15 @@
                 <div class ="ulContent">
                 <ul>
                     <div class="listContent">
-                        <li>8:30am: Check in</li>
-                        <li>9:00am: Opening Ceremony </li>
-                        <li>9:15am: Hacking begins + Team formation</li>
-                        <li> 1:00pm: Lunch </li>
-                        <li> 6:00pm: Dinner </li>
-                        <li> 9:00pm: Hacking Ends </li>
-                        <li> 9:15am: Judging Begins</li>
-                        <li> 10:00pm: Closing Ceremony</li>
+                        <li><span class="time">8:30am:</span> Check in</li>
+                        <li><span class="time">9:00am:</span> Opening Ceremony </li>
+                        <li><span class="time">9:15am:</span> Hacking begins + Team formation</li>
+                        <li><span class="time">1:00pm:</span> Lunch </li>
+                        <li><span class="time">6:00pm:</span> Dinner </li>
+                        <li><span class="time"> 8:30pm:</span> Hacking Ends + Submission </li>
+                        <li><span class="time">9:00pm:</span> Judging Begins</li>
+                        <li><span class="time"> 10:00pm:</span> Closing Ceremony</li>
                     </div>
-
                 </ul>
                 </div>
           </div>
@@ -172,46 +171,59 @@
             <h2><strong>WORKSHOPS</strong>  </h2>
             <hr />
             <div class ="workshop-contents">
-            <h3> 1. Web development basics </h3>
-            <h4> Speaker: STS Trainer </h4>
-            <h4> Time: TBD </h4>
-            <p>
-                If you are planning on making a website, this workshop is for you!
-                We will be working with the Software Traning for Students (STS)
-                to bring a workshop to teach hackers the basics of html, css, javascript and more.
-                Stay tuned for more details about this workshop.
-            </p>
-            <br />
-            <h3> 2. Build IOS and Android apps</h3>
-            <h4> Speaker: TBD </h4>
-            <h4> Time: TBD </h4>
-            <p>
-                Ever wonder how to build a cool mobile app? If you do, this workshop is for you!
-                We will be having a workshop to teach students how to build ios and android apps.
-                Stay tuned for more details about the speaker!
-            </p>
-            <br  />
-            <h3> 3. Backend Web Development using Node.js </h3>
-            <h4> Speaker: Spencer Fricke</h4>
-            <h4> Time: TBD </h4>
-            <p>
-                If you want to learn how backend development works, this workshop is for you!
-                Node.js is an open-source project that can run javascript codes on the server-side.
-                Make sure you have npm and node installed before the workshop.
-                <br/>Installation details
-                can be found <a href="https://nodejs.org/en/">here</a>. If you have troubles installing,
-                feel free to ask for help in the slack channel.
-            </p>
-            <br />
-            <h3> 4. Bitcoin and Blockchains 101 </h3>
-            <h4> Speaker: Sid Ramesh, President of Badger Blockchain </h4>
-            <h4> Time: TBD </h4>
-            <p>
-                If you are interested in learning the history and the future of bitcoins, as
-                well as the technologies that power behind bitcoin, this workshop is for you!
-                Sid Ramesh is the president of Badger Blockchain and will be giving a tech talk
-                on this topic! Stay tuned for more details!
-            </p>
+                <div class="columns is-multiline">
+                <div class="column is-half">
+                    <h3> 1. Web development basics </h3>
+                    <h4> Speaker: STS Trainer </h4>
+                    <h4> Time: TBD </h4>
+                    <p>
+                        If you are planning on making a website, this workshop is for you!
+                        We will be working with the Software Traning for Students (STS)
+                        to bring a workshop to teach hackers the basics of html, css, javascript and more.
+                        Stay tuned for more details about this workshop.
+                    </p>
+                </br>
+
+               </div>
+               <div class="column is-half">
+                <h3> 2. Build IOS and Android apps</h3>
+                <h4> Speaker: TBD </h4>
+                <h4> Time: TBD </h4>
+                <p>
+                    Ever wonder how to build a cool mobile app? If you do, this workshop is for you!
+                    We will be having a workshop to teach students how to build ios and android apps.
+                    Stay tuned for more details about the speaker!
+                </p>
+            </br>
+
+            </div>
+            <div class="column is-half">
+                <h3> 3. Backend Web Development using Node.js </h3>
+                <h4> Speaker: Spencer Fricke</h4>
+                <h4> Time: TBD </h4>
+                <p>
+                    If you want to learn how backend development works, this workshop is for you!
+                    Node.js is an open-source project that can run javascript codes on the server-side.
+                    Make sure you have npm and node installed before the workshop.
+                    <br/>Installation details
+                    can be found <a href="https://nodejs.org/en/">here</a>. If you have troubles installing,
+                    feel free to ask for help in the slack channel.
+                </p>
+
+            </div>
+            <div class="column is-half">
+                <h3> 4. Bitcoin and Blockchains 101 </h3>
+                <h4> Speaker: Sid Ramesh, President of Badger Blockchain </h4>
+                <h4> Time: TBD </h4>
+                <p>
+                    If you are interested in learning the history and the future of bitcoins, as
+                    well as the technologies that power behind bitcoin, this workshop is for you!
+                    Sid Ramesh is the president of Badger Blockchain and will be giving a tech talk
+                    on this topic! Stay tuned for more details!
+                </br> More Information about Badger Blockchain can be found <a href="http://badgerblockchain.club/">here</a>
+                </p>
+            </div>
+        </div>
             </div>
         </div>
 
@@ -316,13 +328,13 @@
                 <div class="column is-one-fifth">
                   <div class="image-container">
                        <a href="https://www.linkedin.com/in/ian-mark/">
-                        <img src="./team/ian.png" />
+                        <img src="./team/ian.jpg" />
                         <div class="after"><h5><div class="name">Ian Mark</div> <br>Madhacks Director </h5> </div></a>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                   <div class="image-container">
-                        <a href="https://www.linkedin.com/in/jakehamel"><img src="./team/jake.jpeg" />
+                        <a href="https://www.linkedin.com/in/jakehamel"><img src="./team/jake.jpg" />
                             <div class="after"><h5><div class="name">Jake Hamel</div><br> Support Coordinator</h5></div></a>
                     </div>
                 </div>
@@ -330,21 +342,22 @@
                     <div class="column is-one-fifth">
                   <div class="image-container">
                         <a href="https://www.linkedin.com/in/andrew-nguyen-87a82987?trk=hp-identity-name">
-                        <img src="./team/andrew.png" />
+                        <img src="./team/andrew.jpg" />
                             <div class="after"><h5><div class="name">Andrew Nguyen </div><br>Web-development Coordinator</h5> </div></a>
                     </div>
                 </div>
 
                 <div class="column is-one-fifth">
                   <div class="image-container">
+                        <a href="https://www.linkedin.com/in/jeremy-koritzinsky-b9595a99/">
                         <img src="./team/jeremy.png" />
-                      <div class="after"><h5><div class="name">Jeremy Koritzinsky</div><br> Sponsorship Coordinator </h5></div>
+                      <div class="after"><h5><div class="name">Jeremy Koritzinsky</div><br> Sponsorship Coordinator </h5></a></div>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                   <div class="image-container">
                       <a href="https://www.linkedin.com/in/awlevin/">
-                        <img src="./team/aaron.png" />
+                        <img src="./team/aaron.jpg" />
                           <div class="after"><h5><div class="name">Aaron Levin</div><br> Sponsorship </h5></div></a>
                     </div>
                 </div>
@@ -359,7 +372,7 @@
                 <div class="column is-one-fifth">
                   <div class="image-container">
                       <a href="https://www.linkedin.com/in/hjennye/">
-                        <img src="./team/jenny.png" />
+                        <img src="./team/jenny.jpg" />
                           <div class="after"><h5><div class="name">Haengjung Ye </div><br> Mentorship Coordinator</h5></div></a>
                     </div>
                 </div>
@@ -374,20 +387,21 @@
                 <div class="column is-one-fifth">
                   <div class="image-container">
                       <a href="https://www.linkedin.com/in/aiden-hao-song/">
-                        <img src="./team/aiden.png" />
+                        <img src="./team/aiden.jpg" />
                           <div class="after"><h5><div class="name">Aiden Song</div> <br> Web Developer</h5></div></a>
                     </div>
                 </div>
                  <div class="column is-one-fifth">
                   <div class="image-container">
-                        <img src="./team/nathaniel.png" />
-                      <div class="after"><h5><div class="name">Nathaniel Krapauer</div> <br> Public Relations Coordinator</h5></div>
+                      <a href="https://www.linkedin.com/in/nathaniel-krakauer-4a202211a/">
+                        <img src="./team/nathaniel.jpg" />
+                      <div class="after"><h5><div class="name">Nathaniel Krapauer</div> <br> Public Relations Coordinator</h5></a></div>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                  <div class="image-container">
                      <a href="https://www.linkedin.com/in/quinn-siebers-2515a964/">
-                       <img src="./team/quinn.png" />
+                       <img src="./team/quinn.jpg" />
                      <div class="after"><h5><div class="name">Quinn Siebers </div><br> Graphic Design</h5></div>
                      </a>
                    </div>
@@ -401,22 +415,30 @@
                 <div class="column is-one-fifth">
                   <div class="image-container">
                       <a href="http://jeichenhofer.com/">
-                        <img src="./team/e.png" />
+                        <img src="./team/joe.jpeg" />
                           <div class="after"><h5><div class="name">Joe Eichenhofer</div> <br> Public Relation</h5></div></a>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                   <div class="image-container">
-                      <a href="#">
-                        <img src="./team/g.png" />
+                      <a href="https://www.linkedin.com/in/connor-stamper-0168a3109/">
+                        <img src="./team/connor.jpg" />
+                      <div class="after"><h5><div class="name">Connor Stamper</div> <br> Web Developer</h5></a></div>
+                    </div>
+                </div>
+
+                <div class="column is-one-fifth">
+                  <div class="image-container">
+                      <a href="https://www.linkedin.com/in/udhbhav-gupta/">
+                        <img src="./team/ud.jpg" />
                           <div class="after"><h5><div class="name">UD Gupta </div><br> Treasurer  </h5></div></a>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                   <div class="image-container">
-                      <a href="">
+
                         <img src="./team/p.png" />
-                          <div class="after"><h5><div class="name">Matthew Parker </div><br>Admission Coordinator</h5> </div></a>
+                          <div class="after"><h5><div class="name">Matthew Parker </div><br>Admission Coordinator</h5> </div>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
@@ -434,25 +456,18 @@
                     </div>
                 </div>
 
-                <div class="column is-one-fifth">
-                  <div class="image-container">
-                        <img src="./team/s.png" />
-                      <div class="after"><h5><div class="name">Connor Stamper</div> <br> Web Developer</h5></div>
-                    </div>
-                </div>
 
                 <div class="column is-one-fifth">
                   <div class="image-container">
-                      <a href="">
+
                         <img src="./team/d.png" />
-                          <div class="after"><h5><div class="name">Aniket Dalvi</div><br> Food Coordinator</h5></div></a>
+                          <div class="after"><h5><div class="name">Aniket Dalvi</div><br> Food Coordinator</h5></div>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                   <div class="image-container">
-                      <a href="">
-                        <img src="./team/a.png" />
-                          <div class="after"><h5><div class="name">Mujahid Anuar</div><br> Food </h5></div></a>
+                        <img src="./team/y.png" />
+                          <div class="after"><h5><div class="name">Benjamin Yin</div><br> Food </h5></div>
                     </div>
                 </div>
 
@@ -486,6 +501,8 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+
     </script>
 </body>
 </html>

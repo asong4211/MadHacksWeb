@@ -5,10 +5,6 @@
     left: 0;
     bottom: 0;
 }
-
-.scroll{
-    overflow: scroll;;
-}
 .head {
     height: 100%;
     width: 100%;
@@ -83,6 +79,7 @@
     color: #b5271e;
 }
 
+
 .nav {
     position: absolute;
     background-color: #b5271e;
@@ -91,6 +88,7 @@
     margin-top: -59px;
     font-family: 'Play', sans-serif;
     border-top: solid 5px #4f0f0c;
+    overflow: hidden;
 
 }
 
@@ -105,6 +103,7 @@
     background-color: #962018;
 }
 
+
 .about {
     margin-top: 59px;
     padding-top: 60px;
@@ -115,7 +114,7 @@
     color: #ffffff;
     font-family: 'Play', sans-serif;
     margin-bottom: 0 !important;
-    border-top: solid 5px #111;
+    /* border-top: solid 5px #111; */
 }
 
 
@@ -227,7 +226,9 @@
      -webkit-transform: scale(1.07);
 }
 
-
+.schedule .time{
+    font-weight: bold;
+}
 
 
 .workshops{
@@ -246,7 +247,7 @@
 }
 
 .workshops .workshop-contents{
-    padding:40px;
+     padding:20px;
     line-height: 1.7;
 
 }
@@ -260,6 +261,7 @@
 .workshops p{
     font-size:1.1em;
 }
+
 
 .sponsors {
     padding-left: 40px;
@@ -312,6 +314,7 @@
     margin-bottom: 0 !important;
     font-family: 'Play', sans-serif;
     border-top: solid 5px #111;
+
 }
 
 /*
@@ -342,6 +345,8 @@
     padding-top:30px;
     padding-left:80px;
     padding-right:80px;
+    margin-left: 130px;
+   margin-right:130px;
 }
 
 .team h5{
