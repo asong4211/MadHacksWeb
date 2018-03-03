@@ -396,11 +396,6 @@
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
-.team .name {
-    font-size:1.3em;
-    text-decoration: underline;
-
-}
 .team .columns {
     padding-right:40px;
     margin-left: 40px;
@@ -409,7 +404,12 @@
 
 .team h5 {
     color:white;
-    font-size:0.5em;
+    font-size:0.3em;
+}
+.team .name {
+    font-size:1.4em;
+    text-decoration: underline;
+
 }
 
 .team .image-container {
