@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>MadHacks Mini | Spring 2018</title>
-	<meta charset="UTF-8">
+    <title>MadHacks Mini | Spring 2018</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">6
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
-	<link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-		<link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png">
 </head>
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"
+    href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=red"
+    target="_blank">
+    <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/red.svg" alt="Major League Hacking 2017 Hackathon Season"
+        style="width:100%">
+</a>
+
 <body>
     <div id="loadOverlay" style="background-color:#333; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
-	<div class="wrapper">
-		<!--header-->
-		<div class="head has-text-centered">
+    <div class="wrapper">
+        <!--header-->
+        <div class="head has-text-centered">
             <div id="headerAnim" class="headerAnim"></div>
             <noscript>
                 <div style="height: 100%; width: 100%; background-color: #000; top: 0; position: absolute; display: block;"></div>
@@ -26,16 +33,14 @@
                 <a class="register-button" href="https://madhacks-2018.typeform.com/to/d504Wd">Register Now</a>
             </div>
             <div class="headerTopLeft">
-                <!-- <h1><img src="./images/madHacks.png">MadHacks <span style="color: #b5271e">2018</span></h1> -->
-				<img src ="./images/madhackMini.png" />
-				<h4>CS 1240 @ University of Wisconsin, Madison</h4>
+                <img src="./images/madhackMini.png" />
+                <h4>CS 1240 @ University of Wisconsin, Madison</h4>
                 <h4>8:30 am - 10:00 pm, April 7th 2018</h4>
             </div>
-		</div>
+        </div>
 
-
-		<!--nav-->
-		<div class="nav columns is-gapless is-mobile" id ="navBar">
+        <!--nav-->
+        <div class="nav columns is-gapless is-mobile" id="navBar">
             <div class="column"></div>
             <div class="column has-text-centered is-hidden-mobile nav-link">
                 <a href="#about">About Us</a>
@@ -56,86 +61,99 @@
                 <a href="#team">Team</a>
             </div>
             <div class="column has-text-centered is-hidden-mobile nav-link">
-                <a href="https://madhacks-2018.typeform.com/to/NI8CP7" >Contact</a>
+                <a href="https://madhacks-2018.typeform.com/to/NI8CP7">Contact</a>
             </div>
-			<div class="column has-text-centered is-hidden-mobile nav-link">
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSdKQfzy-b_TVmTXZOd1FKAl9baBXUzd_J6Gpc8AtbGZ8iODGw/viewform">
-                         Volunteer</a>
-			</div>
+            <div class="column has-text-centered is-hidden-mobile nav-link">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKQfzy-b_TVmTXZOd1FKAl9baBXUzd_J6Gpc8AtbGZ8iODGw/viewform">
+                    Volunteer</a>
+            </div>
             <div class="column"></div>
-		</div>
+        </div>
+
         <!-- About -->
-        <div class="about columns" id ="about">
-            <div class="column about-blurb" >
+        <div class="about columns" id="about">
+            <div class="column about-blurb">
                 <h2>ABOUT MADHACKS</h2>
-                <h4><strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon,
-                    bringing together participants from all over the US for 24 hours of hacking. Unlike other hackathons,
-                    MadHacks is going to be putting emphasis on the wacky, the original, and the downright impossible!</h4>
+                <h4>
+                    <strong>MadHacks</strong> is the University of Wisconsin's twice-annual hackathon, bringing together participants
+                    from all over the US for 24 hours of hacking. Unlike other hackathons, MadHacks is going to be putting
+                    emphasis on the wacky, the original, and the downright impossible!</h4>
             </div>
             <div class="column about-blurb-2">
                 <h2>&nbsp;</h2>
-                <h4> This spring, we will be having a 12 hours, beginner-friendly mini-hackathon that give new hackers
-                    a glimpse into what hackathons are like. Although it is a shorter hackathon,
-                    we will still be having mentors, workshops and prizes!</h4>
+                <h4> This spring, we will be having a 12 hours, beginner-friendly mini-hackathon that give new hackers a glimpse
+                    into what hackathons are like. Although it is a shorter hackathon, we will still be having mentors, workshops
+                    and prizes!</h4>
             </div>
             <div class="column twitter">
-                <a class="twitter-timeline" data-width="450" data-height="300" data-theme="dark" data-link-color="#1b95e0" data-chrome="nofooter" href="https://twitter.com/MadHacksUW?ref_src=twsrc%5Etfw">Tweets by MadHacksUW</a>
+                <a class="twitter-timeline" data-width="450" data-height="300" data-theme="dark" data-link-color="#1b95e0" data-chrome="nofooter"
+                    href="https://twitter.com/MadHacksUW?ref_src=twsrc%5Etfw">Tweets by MadHacksUW</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
-
-
 
         <!-- FAQ -->
         <div class="faq" id="faq">
             <h2>FREQUENTLY ASKED QUESTIONS</h2>
             <div class="columns is-multiline">
-            <div class="column is-one-third faq-item top-line">
-                <h4>What’s a hackathon?</h4>
-                <p> Hackathon is an event where students gather together to work on a software or hardware project. Madhacks Spring 2018 will be a 12 hours hackathon.
-                    If this is your first time attending, check out our hackathon veteran Spencer’s
-                    medium post on <a href ="https://medium.com/@spencerfricke/how-to-do-hackathons-4a96207d5d3d">How to Do Hackathons.</a> </p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>Do I need a team?</h4>
-                <p>We encourage students to work with a team of 2 - 4 people but you can work individually as well. If you don't have a team yet,
-                    there will be a team formation after the opening ceremony. If you want to find a team before the event, join the #team-formation slack channel.</p>
-            </div>
+                <div class="column is-one-third faq-item top-line">
+                    <h4>What’s a hackathon?</h4>
+                    <p> Hackathon is an event where students gather together to work on a software or hardware project. Madhacks
+                        Spring 2018 will be a 12 hours hackathon. If this is your first time attending, check out our hackathon
+                        veteran Spencer’s medium post on
+                        <a href="https://medium.com/@spencerfricke/how-to-do-hackathons-4a96207d5d3d">How to Do Hackathons.</a>
+                    </p>
+                </div>
+                <div class="column is-one-third faq-item">
+                    <h4>Do I need a team?</h4>
+                    <p>We encourage students to work with a team of 2 - 4 people but you can work individually as well. If you
+                        don't have a team yet, there will be a team formation after the opening ceremony. If you want to
+                        find a team before the event, join the #team-formation slack channel.</p>
+                </div>
 
-            <div class="column is-one-third faq-item">
-                <h4>Who can participate?</h4>
-                <p>We welcome all Madison area undergraduate and graduate students of all backgrounds. You don’t need to be a Computer Science or Engineering major to attend.
-                     If you don't know how to code, we will have workshops throughout the day to teach you how to code!</p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>What do I need to bring?</h4>
-                <p>You need to bring a photo ID to check in. You should also bring a laptop, chargers, and anything else you will need for a 12 hours hackathon.</p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>How much does it cost to attend?</h4>
-                <p>Admission to Madhacks is completely free. We will also be providing breakfast, lunch and dinner!
-                There will also be workshops and activities throughout the event.</p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>What else do I need to know? </h4>
-                <p>Please review the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. Please also be aware that by attending this event, you agree to the MLH Data Sharing Notice:
-                    <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a>
-                     and the <a href="https://mlh.io/privacy">MLH Privacy Policy</a></p>
-            </div>
+                <div class="column is-one-third faq-item">
+                    <h4>Who can participate?</h4>
+                    <p>We welcome all Madison area undergraduate and graduate students of all backgrounds. You don’t need to
+                        be a Computer Science or Engineering major to attend. If you don't know how to code, we will have
+                        workshops throughout the day to teach you how to code!</p>
+                </div>
+                <div class="column is-one-third faq-item">
+                    <h4>What do I need to bring?</h4>
+                    <p>You need to bring a photo ID to check in. You should also bring a laptop, chargers, and anything else
+                        you will need for a 12 hours hackathon.</p>
+                </div>
+                <div class="column is-one-third faq-item">
+                    <h4>How much does it cost to attend?</h4>
+                    <p>Admission to Madhacks is completely free. We will also be providing breakfast, lunch and dinner! There
+                        will also be workshops and activities throughout the event.</p>
+                </div>
+                <div class="column is-one-third faq-item">
+                    <h4>What else do I need to know? </h4>
+                    <p>Please review the
+                        <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. Please also be aware that by attending this event, you agree to the MLH
+                        Data Sharing Notice:
+                        <a href="https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions">MLH Contest Terms and Conditions</a>
+                        and the
+                        <a href="https://mlh.io/privacy">MLH Privacy Policy</a>
+                    </p>
+                </div>
 
-            <div class="column is-one-third faq-item">
-                <h4>Where and When? </h4>
-                <p>Madhacks Spring 2018 will be on April 7th from 9:00 am to 10:30 pm at Computer Science Room 1240. Check-in will start at 8:30 am. If you want to volunteer on the day of the event, please fill out
-									 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKQfzy-b_TVmTXZOd1FKAl9baBXUzd_J6Gpc8AtbGZ8iODGw/viewform">this form.</a></p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>Will there be any prizes?</h4>
-                <p>Yes! Stay tuned for more details about the prizes. </p>
-            </div>
-            <div class="column is-one-third faq-item">
-                <h4>Still have questions?</h4>
-                <p>You can <a href="https://madhacks-2018.typeform.com/to/NI8CP7" >contact us </a>if you still have any questions. </p>
-            </div>
+                <div class="column is-one-third faq-item">
+                    <h4>Where and When? </h4>
+                    <p>Madhacks Spring 2018 will be on April 7th from 9:00 am to 10:30 pm at Computer Science Room 1240. Check-in
+                        will start at 8:30 am. If you want to volunteer on the day of the event, please fill out
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKQfzy-b_TVmTXZOd1FKAl9baBXUzd_J6Gpc8AtbGZ8iODGw/viewform">this form.</a>
+                    </p>
+                </div>
+                <div class="column is-one-third faq-item">
+                    <h4>Will there be any prizes?</h4>
+                    <p>Yes! Stay tuned for more details about the prizes. </p>
+                </div>
+                <div class="column is-one-third faq-item">
+                    <h4>Still have questions?</h4>
+                    <p>You can
+                        <a href="https://madhacks-2018.typeform.com/to/NI8CP7">contact us </a>if you still have any questions. </p>
+                </div>
             </div>
         </div>
 
@@ -145,50 +163,59 @@
                 <div class="column">
                     <h2>SCHEDULE</h2>
                     <ul>
-                        <li><span class="time">08:30am:</span> Check in</li>
-                        <li><span class="time">09:00am:</span> Opening Ceremony </li>
-                        <li><span class="time">09:15am:</span> Hacking begins + Team formation</li>
-                        <li><span class="time">01:00pm:</span> Lunch </li>
-                        <li><span class="time">06:00pm:</span> Dinner </li>
-                        <li><span class="time">08:30pm:</span> Hacking Ends + Submission Begins </li>
-                        <li><span class="time">09:00pm:</span> Judging Begins</li>
-                        <li><span class="time">10:00pm:</span> Closing Ceremony</li>
+                        <li>
+                            <span class="time">08:30am:</span> Check in</li>
+                        <li>
+                            <span class="time">09:00am:</span> Opening Ceremony </li>
+                        <li>
+                            <span class="time">09:15am:</span> Hacking begins + Team formation</li>
+                        <li>
+                            <span class="time">01:00pm:</span> Lunch </li>
+                        <li>
+                            <span class="time">06:00pm:</span> Dinner </li>
+                        <li>
+                            <span class="time">08:30pm:</span> Hacking Ends + Submission Begins </li>
+                        <li>
+                            <span class="time">09:00pm:</span> Judging Begins</li>
+                        <li>
+                            <span class="time">10:00pm:</span> Closing Ceremony</li>
                     </ul>
                 </div>
                 <div class="column schedule-image">
                     <!-- <img src="images/mh_noborder.png" alt="madhacks logo"/> -->
-                    <img src="images/workshop.jpg" alt="workshops"/>
+                    <img src="images/workshop.jpg" alt="workshops" />
                 </div>
             </div>
         </div>
 
-
-
         <!-- Workshops -->
-
-        <div class ="workshops" id="ws">
-            <h2><strong>WORKSHOPS</strong>  </h2>
-            <div class ="workshop-contents">
+        <div class="workshops" id="ws">
+            <h2>
+                <strong>WORKSHOPS</strong>
+            </h2>
+            <div class="workshop-contents">
                 <div class="columns is-multiline">
                     <div class="column is-half workshops-top-line workshops-blurb workshops-top">
                         <h3> 1. Web development basics </h3>
-                        <h4> <strong>Speaker:</strong> STS Trainer </h4>
-                        <h4> <strong>Time:</strong> TBD </h4>
+                        <h4>
+                            <strong>Speaker:</strong> STS Trainer </h4>
+                        <h4>
+                            <strong>Time:</strong> TBD </h4>
                         <p>
-                            If you are planning on making a website, this workshop is for you!
-                            We will be working with the Software Traning for Students (STS)
-                            to bring a workshop to teach hackers the basics of html, css, javascript and more.
-                            Stay tuned for more details about this workshop.
+                            If you are planning on making a website, this workshop is for you! We will be working with the Software Traning for Students
+                            (STS) to bring a workshop to teach hackers the basics of html, css, javascript and more. Stay
+                            tuned for more details about this workshop.
                         </p>
-                   </div>
-                   <div class="column is-half workshops-blurb workshops-top">
+                    </div>
+                    <div class="column is-half workshops-blurb workshops-top">
                         <h3> 2. Build IOS and Android apps</h3>
-                        <h4> <strong>Speaker:</strong> TBD </h4>
-                        <h4> <strong>Time:</strong> TBD </h4>
+                        <h4>
+                            <strong>Speaker:</strong> TBD </h4>
+                        <h4>
+                            <strong>Time:</strong> TBD </h4>
                         <p>
-                            Ever wonder how to build a cool mobile app? If you do, this workshop is for you!
-                            We will be having a workshop to teach students how to build ios and android apps.
-                            Stay tuned for more details about the speaker!
+                            Ever wonder how to build a cool mobile app? If you do, this workshop is for you! We will be having a workshop to teach students
+                            how to build ios and android apps. Stay tuned for more details about the speaker!
                         </p>
                         </br>
                     </div>
@@ -196,27 +223,30 @@
                 <div class="columns is-multiline">
                     <div class="column is-half workshops-blurb">
                         <h3> 3. Backend Web Development using Node.js </h3>
-                        <h4> <strong>Speaker:</strong> Spencer Fricke</h4>
-                        <h4> <strong>Time:</strong> TBD </h4>
+                        <h4>
+                            <strong>Speaker:</strong> Spencer Fricke</h4>
+                        <h4>
+                            <strong>Time:</strong> TBD </h4>
                         <p>
-                            If you want to learn how backend development works, this workshop is for you!
-                            Node.js is an open-source project that can run javascript codes on the server-side.
-                            Make sure you have npm and node installed before the workshop.
-                            <br/>Installation details
-                            can be found <a href="https://nodejs.org/en/">here</a>. If you have troubles installing,
-                            feel free to ask for help in the slack channel.
+                            If you want to learn how backend development works, this workshop is for you! Node.js is an open-source project that can
+                            run javascript codes on the server-side. Make sure you have npm and node installed before the
+                            workshop.
+                            <br/>Installation details can be found
+                            <a href="https://nodejs.org/en/">here</a>. If you have troubles installing, feel free to ask for help in the slack channel.
                         </p>
                     </div>
                     <div class="column is-half workshops-blurb">
                         <h3> 4. Bitcoin and Blockchains 101 </h3>
-                        <h4> <strong>Speaker:</strong> Sid Ramesh, President of Badger Blockchain </h4>
-                        <h4> <strong>Time:</strong> TBD </h4>
+                        <h4>
+                            <strong>Speaker:</strong> Sid Ramesh, President of Badger Blockchain </h4>
+                        <h4>
+                            <strong>Time:</strong> TBD </h4>
                         <p>
-                            If you are interested in learning the history and the future of bitcoins, as
-                            well as the technologies that power behind bitcoin, this workshop is for you!
-                            Sid Ramesh is the president of Badger Blockchain and will be giving a tech talk
-                            on this topic! Stay tuned for more details!
-                        </br> More Information about Badger Blockchain can be found <a href="http://badgerblockchain.club/">here</a>
+                            If you are interested in learning the history and the future of bitcoins, as well as the technologies that power behind bitcoin,
+                            this workshop is for you! Sid Ramesh is the president of Badger Blockchain and will be giving
+                            a tech talk on this topic! Stay tuned for more details!
+                            </br> More Information about Badger Blockchain can be found
+                            <a href="http://badgerblockchain.club/">here</a>
                         </p>
                     </div>
                 </div>
@@ -248,18 +278,18 @@
                 }]
             };
             // add markers to map
-            geojson.features.forEach(function(marker) {
+            geojson.features.forEach(function (marker) {
 
-            // create a HTML element for each feature
-            var el = document.createElement('div');
-            el.className = 'marker';
+                // create a HTML element for each feature
+                var el = document.createElement('div');
+                el.className = 'marker';
 
-            // make a marker for each feature and add to the map
-            new mapboxgl.Marker(el)
-            .setLngLat(marker.geometry.coordinates)
-            .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-            .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
-            .addTo(map);
+                // make a marker for each feature and add to the map
+                new mapboxgl.Marker(el)
+                    .setLngLat(marker.geometry.coordinates)
+                    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+                        .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+                    .addTo(map);
             });
             // disable map zoom when using scroll
             map.scrollZoom.disable();
@@ -278,187 +308,277 @@
                 <div class="column is-one-third">
                     <img src="images/mlh-logo.png">
                 </div>
-                <div class="column is-one-third" style="visibility:hidden";>
+                <div class="column is-one-third" style="visibility:hidden" ;>
                     <!-- Used as a placeholder column for formatting -->
                 </div>
             </div>
             <h3>Interested in sponsoring Madhacks? </h3>
-            <h3><a href="./sponsor.pdf">Check this out</a></h3>
+            <h3>
+                <a href="./sponsor.pdf">Check this out</a>
+            </h3>
         </div>
 
-        <div class="team" id ="team">
+        <div class="team" id="team">
             <div class="backgroundImage">
                 <h2>The Team</h2>
             </div>
-
             <div class="columns">
-
                 <div class="column">
-                  <div class="image-container">
-                       <a href="https://www.linkedin.com/in/ian-mark/">
-                        <img src="./team/ian.jpg" />
-                        <div class="after"><h5><div class="name">Ian Mark</div> <br>Madhacks Director </h5> </div></a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/ian-mark/">
+                            <img src="./team/ian.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Ian Mark</div>
+                                    <br>Madhacks Director </h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                        <a href="https://www.linkedin.com/in/jakehamel"><img src="./team/jake.jpg" />
-                            <div class="after"><h5><div class="name">Jake Hamel</div><br> Support Coordinator</h5></div></a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/jakehamel">
+                            <img src="./team/jake.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Jake Hamel</div>
+                                    <br> Support Coordinator</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                    <div class="column">
-                  <div class="image-container">
+                <div class="column">
+                    <div class="image-container">
                         <a href="https://www.linkedin.com/in/andrew-nguyen-87a82987?trk=hp-identity-name">
-                        <img src="./team/andrew.jpg" />
-                            <div class="after"><h5><div class="name">Andrew Nguyen </div><br>Web-development Coordinator</h5> </div></a>
+                            <img src="./team/andrew.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Andrew Nguyen </div>
+                                    <br>Web-development Coordinator</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
                 <div class="column">
-                  <div class="image-container">
+                    <div class="image-container">
                         <a href="https://www.linkedin.com/in/jeremy-koritzinsky-b9595a99/">
-                        <img src="./team/jeremy.png" />
-                      <div class="after"><h5><div class="name">Jeremy Koritzinsky</div><br> Sponsorship Coordinator </h5></a></div>
+                            <img src="./team/jeremy.png" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Jeremy Koritzinsky</div>
+                                    <br> Sponsorship Coordinator </h5>
+                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/awlevin/">
-                        <img src="./team/aaron.jpg" />
-                          <div class="after"><h5><div class="name">Aaron Levin</div><br> Sponsorship </h5></div></a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/awlevin/">
+                            <img src="./team/aaron.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Aaron Levin</div>
+                                    <br> Sponsorship </h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/karmnagi/">
-                        <img src="./team/karm.jpg" />
-                          <div class="after"><h5><div class="name"> Karm Nagi</div><br> Sponsorship </h5></div></a>
-                    </div>
-                </div>
-
-                <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/hjennye/">
-                        <img src="./team/jenny.jpg" />
-                          <div class="after"><h5><div class="name">Haengjung Ye </div><br> Mentorship Coordinator</h5></div></a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/karmnagi/">
+                            <img src="./team/karm.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name"> Karm Nagi</div>
+                                    <br> Sponsorship </h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="http://johnmoss.us/">
-                        <img src="./team/john.jpg" />
-                      <div class="after"><h5><div class="name">John Moss</div> <br> Web Developer</h5></div>
-                      </a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/hjennye/">
+                            <img src="./team/jenny.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Haengjung Ye </div>
+                                    <br> Mentorship Coordinator</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/aiden-hao-song/">
-                        <img src="./team/aiden.jpg" />
-                          <div class="after"><h5><div class="name">Aiden Song</div> <br> Web Developer</h5></div></a>
+                    <div class="image-container">
+                        <a href="http://johnmoss.us/">
+                            <img src="./team/john.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">John Moss</div>
+                                    <br> Web Developer</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/nathaniel-krakauer-4a202211a/">
-                        <img src="./team/nathaniel.jpg" />
-                      <div class="after"><h5><div class="name">Nathaniel Krapauer</div> <br> Public Relations Coordinator</h5></a></div>
+                <div class="column">
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/aiden-hao-song/">
+                            <img src="./team/aiden.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Aiden Song</div>
+                                    <br> Web Developer</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                </div>
-
-                <div class="columns">
                 <div class="column">
-                 <div class="image-container">
-                     <a href="https://www.linkedin.com/in/quinn-siebers-2515a964/">
-                       <img src="./team/quinn.jpg" />
-                     <div class="after"><h5><div class="name">Quinn Siebers </div><br> Graphic Design</h5></div>
-                     </a>
-                   </div>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/nathaniel-krakauer-4a202211a/">
+                            <img src="./team/nathaniel.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Nathaniel Krapauer</div>
+                                    <br> Public Relations Coordinator</h5>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/quinn-siebers-2515a964/">
+                            <img src="./team/quinn.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Quinn Siebers </div>
+                                    <br> Graphic Design</h5>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
+                    <div class="image-container">
                         <img src="./team/monica.jpg" />
-                      <div class="after"><h5><div class="name">Monica Ma </div><br> Activities </h5></div>
-                    </div>
-                 </div>
-                <div class="column">
-                  <div class="image-container">
-                      <a href="http://jeichenhofer.com/">
-                        <img src="./team/joe.jpeg" />
-                          <div class="after"><h5><div class="name">Joe Eichenhofer</div> <br> Public Relation</h5></div></a>
+                        <div class="after">
+                            <h5>
+                                <div class="name">Monica Ma </div>
+                                <br> Activities </h5>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/connor-stamper-0168a3109/">
-                        <img src="./team/connor.jpg" />
-                      <div class="after"><h5><div class="name">Connor Stamper</div> <br> Web Developer</h5></a></div>
-                    </div>
-                </div>
-
-                <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/udhbhav-gupta/">
-                        <img src="./team/ud.jpg" />
-                          <div class="after"><h5><div class="name">UD Gupta </div><br> Treasurer  </h5></div></a>
+                    <div class="image-container">
+                        <a href="http://jeichenhofer.com/">
+                            <img src="./team/joe.jpeg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Joe Eichenhofer</div>
+                                    <br> Public Relation</h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/yash-shah-bb8b29127">
-                        <img src="./team/shah.png" />
-                          <div class="after"><h5><div class="name">Yash Shah </div><br> Travel Coordinator </h5></div></a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/connor-stamper-0168a3109/">
+                            <img src="./team/connor.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Connor Stamper</div>
+                                    <br> Web Developer</h5>
+                        </a>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/udhbhav-gupta/">
+                            <img src="./team/ud.jpg" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">UD Gupta </div>
+                                    <br> Treasurer </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/yash-shah-bb8b29127">
+                            <img src="./team/shah.png" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Yash Shah </div>
+                                    <br> Travel Coordinator </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container">
 
                         <img src="./team/p.png" />
-                          <div class="after"><h5><div class="name">Matthew Parker </div><br>Admission Coordinator</h5> </div>
+                        <div class="after">
+                            <h5>
+                                <div class="name">Matthew Parker </div>
+                                <br>Admission Coordinator</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
-                      <a href="https://www.linkedin.com/in/muhamad-firdaus-husaini-6a0b5113b/">
-                        <img src="./team/h.png" />
-                          <div class="after"><h5><div class="name">Muhamad Firdaus Husaini </div><br> Volenteer Coordinator </h5></div></a>
+                    <div class="image-container">
+                        <a href="https://www.linkedin.com/in/muhamad-firdaus-husaini-6a0b5113b/">
+                            <img src="./team/h.png" />
+                            <div class="after">
+                                <h5>
+                                    <div class="name">Muhamad Firdaus Husaini </div>
+                                    <br> Volenteer Coordinator </h5>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
                 <div class="column">
-                  <div class="image-container">
+                    <div class="image-container">
 
                         <img src="./team/d.png" />
-                          <div class="after"><h5><div class="name">Aniket Dalvi</div><br> Food Coordinator</h5></div>
+                        <div class="after">
+                            <h5>
+                                <div class="name">Aniket Dalvi</div>
+                                <br> Food Coordinator</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="column">
-                  <div class="image-container">
+                    <div class="image-container">
                         <img src="./team/y.png" />
-                          <div class="after"><h5><div class="name">Benjamin Yin</div><br> Admission </h5></div>
+                        <div class="after">
+                            <h5>
+                                <div class="name">Benjamin Yin</div>
+                                <br> Admission </h5>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
-        <!--footer-->
+        <!--Footer-->
         <div class="footer columns has-text-centered" id="contact">
             <div class="column is-one-third" style="text-align: left;">
                 <a onclick="topFunction()" class="topLink">Back to the Top</a>
             </div>
             <div class="column is-one-third" style="text-align: center">
-                <a href="https://twitter.com/MadHacksUW"><img src="images/twitter.png" style="height: 25px"></a>
-                <a href="https://www.facebook.com/MadHacksUW/"><img src="images/facebook1.png" style="height: 25px"></a>
+                <a href="https://twitter.com/MadHacksUW">
+                    <img src="images/twitter.png" style="height: 25px">
+                </a>
+                <a href="https://www.facebook.com/MadHacksUW/">
+                    <img src="images/facebook1.png" style="height: 25px">
+                </a>
             </div>
             <div class="column is-one-third" style="text-align: right">
                 <a onclick="topFunction()">&copy 2018 MadHacks</a>
             </div>
         </div>
-
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
@@ -466,12 +586,12 @@
 
     <script type="text/javascript" src="js/header_anim.js"></script>
     <script>
-    //this function is used to scroll back to the top
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+        //this function is used to scroll back to the top
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
-
 </body>
+
 </html>
