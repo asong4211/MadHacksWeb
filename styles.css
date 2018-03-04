@@ -38,7 +38,7 @@
 }
 
 .headerTopLeft img {
-    height: 34px;
+    height: 84px;
     margin-right: 10px;
 }
 
@@ -52,7 +52,8 @@
 
 .headerTopLeft h4 {
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .register-button {
@@ -70,10 +71,8 @@
     padding-top: 10px;
     color: #ffffff;
     font-weight: 400;
-    font-family: 'Play', sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
 }
-
-
 
 
 .register-button:hover {
@@ -88,10 +87,11 @@
 .nav {
     position: absolute;
     background-color: #b5271e;
+    /* background-color:#DA2E2E; */
     width: 100%;
     margin-bottom: 0 !important;
     margin-top: -59px;
-    font-family: 'Play', sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
     border-top: solid 5px #4f0f0c;
     overflow: hidden;
 
@@ -117,7 +117,7 @@
     padding-bottom: 40px;
     background-color: #222222;
     color: #ffffff;
-    font-family: 'Play', sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
     margin-bottom: 0 !important;
     /* border-top: solid 5px #111; */
 }
@@ -142,6 +142,7 @@
     padding-bottom: 10px;
     border-bottom: solid 1px #333;
     font-weight: bold;
+    font-family:'Nexa Bold Caps', sans-serif;
 }
 
 .about-blurb-2 h2 {
@@ -169,7 +170,7 @@
     background-color: #d6d8d8;
     margin-bottom: 0 !important;
     margin-top: 0 !important;
-    font-family: 'Play', sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
     border-top: solid 5px #888;
 }
 
@@ -181,6 +182,7 @@
     padding-bottom: 5px;
     font-weight: bold;
     color: #111;
+    font-family:'Nexa Bold Caps', sans-serif;
 }
 
 .faq .top-line {
@@ -203,7 +205,7 @@
 
 .schedule {
     background-color:#222222;
-    font-family:'Play',sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
     padding-top:30px;
     padding-left:40px;
     padding-right:40px;
@@ -220,6 +222,7 @@
     font-weight: bold;
     padding-bottom: 10px;
     margin-bottom: 15px;
+    font-family:'Nexa Bold Caps', sans-serif;
 }
 
 .scheduleList {
@@ -235,9 +238,9 @@
 .schedule-image {
     text-align: center;
 }
-
+/*
 .schedule-image img {
-    -webkit-filter: saturate(0%) invert(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: saturate(0%) invert(100%);
     filter: saturate(0%) invert(100%);
     opacity: 0.2;
     transition-property: filter opacity;
@@ -246,8 +249,12 @@
 
 .schedule-image img:hover {
     filter: saturate(100%);
-    /* -webkit-transform: scale(1.00); */
     opacity: 1;
+} */
+
+.schedule-image img{
+    border-radius: 5px;
+
 }
 
 .schedule .time {
@@ -258,7 +265,7 @@
 
 .workshops {
     background-color:#d6d8d8;
-    font-family:'Play',sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
     padding-top: 30px;
     padding-left: 40px;
     padding-right: 40px;
@@ -271,6 +278,7 @@
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
+    font-family:'Nexa Bold Caps', sans-serif;
 }
 
 .workshops-blurb {
@@ -310,7 +318,7 @@
     background-color: #222222;
     text-align: center;
     margin-bottom: 0 !important;
-    font-family: 'Play', sans-serif;
+    font-family: 'Roboto Condensed','Play', sans-serif;
     border-top: solid 5px #111;
 }
 
@@ -396,7 +404,7 @@
     text-transform: uppercase;
     font-weight: bold;
     border-bottom: solid 1px #bcbcbc;
-    font-family: "Play", sans-serif;
+    font-family: 'Nexa Bold Cups','Play', sans-serif;
     width: 30%;
     padding-bottom: 5px;
     margin-bottom: 20px;
