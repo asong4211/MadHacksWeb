@@ -5,6 +5,7 @@
     left: 0;
     bottom: 0;
 }
+
 .head {
     height: 100%;
     width: 100%;
@@ -56,6 +57,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 .register-button {
     position: absolute;
     left: 50%;
@@ -81,36 +83,44 @@
 
 }
 
+/* Navigation bar */
 
 
-
-.nav {
-    position: absolute;
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
     background-color: #b5271e;
-    /* background-color:#DA2E2E; */
-    width: 100%;
-    margin-bottom: 0 !important;
-    margin-top: -59px;
-    font-family: 'Roboto Condensed','Play', sans-serif;
-    border-top: solid 5px #4f0f0c;
     overflow: hidden;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.nav-link a {
-    color: white;
+/* Style the links inside the navigation bar */
+.navbar a {
+    margin:0 auto;
+    float: left;
     display: block;
-    height: 54px;
-    padding-top: 14px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto Condensed','Play', sans-serif;
 }
 
-.nav-link:hover {
-    background-color: #962018;
+.navbar a:hover {
+    background-color:#962018;
 }
 
 
+
+.navbar .icon {
+    display: none;
+}
+
+
+/* About */
 .about {
-    margin-top: 30px;
     padding-top: 60px;
     padding-left: 40px;
     padding-right: 40px;
@@ -119,17 +129,10 @@
     color: #ffffff;
     font-family: 'Roboto Condensed','Play', sans-serif;
     margin-bottom: 0 !important;
-    /* border-top: solid 5px #111; */
+    border-top: solid 5px #111;
 }
 
 
-/* .twitter {
-
-    text-align: center;
-    padding-top: 30px;
-    text-transform: uppercase;
-    font-weight: 900;
-} */
 
 .twitter {
     text-align: center;
@@ -349,8 +352,8 @@
 
 .sponsors img {
     max-height: 50px;
-    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
+    /* -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); */
 }
 
 .sponsors img:hover {
@@ -527,3 +530,41 @@
     text-decoration: none;
 }
 #loadOverlay{display: none;}
+
+@media screen and (max-width: 600px) {
+  .mlhLogo{
+      display: none;
+  }
+  .headerTopLeft img{
+    width: 90%;
+  }
+  .headerTopLeft h4{
+    font-size: 0.95em;
+  }
+  /* .nav a{display:none;}
+  .nav a.icon{
+      float:right;
+      display: block;
+  } */
+}
+@media screen and (max-width: 600px) {
+  .navbar a{display: none;}
+  .navbar a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive a.icon {
+    position: absolute;
+    left:0;
+    bottom: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
