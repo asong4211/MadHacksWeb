@@ -6,8 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css" />
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Next+Bold+Cups"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
@@ -36,6 +41,12 @@
             <div class="headerOverlay">
                 <a class="register-button" href="https://madhacks-2018.typeform.com/to/d504Wd">Register Now</a>
             </div>
+            <div class="iconOverlay">
+                 <!-- <i class="fa fa-facebook-official"></i> --><a href="">
+                 <a href="https://www.facebook.com/MadHacksUW/"><i class="fab fa-facebook-square fa-lg"></i></a>
+
+                 <a href="https://twitter.com/MadHacksUW"><i class="fab fa-twitter-square fa-lg" ></i></a>
+            </div>
             <div class="headerTopLeft">
                 <img src="./images/madhackMini.png" />
                 <h4>CS 1240 @ University of Wisconsin, Madison</h4>
@@ -43,45 +54,15 @@
             </div>
         </div>
 
-        <!--nav-->
-        <!-- <div class="nav columns is-gapless" id="navBar">
-            <div class="column"></div>
-            <div class="column nav-link">
-                <a href="#about">About Us</a>
-            </div>
-            <div class="column nav-link">
-                <a href="#faq">F.A.Q.</a>
-            </div>
-            <div class="column nav-link">
-                <a href="#schedule">Schedule</a>
-            </div>
-            <div class="column has-text-centered nav-link">
-                <a href="#ws">Workshops</a>
-            </div>
-            <div class="column has-text-centered  nav-link">
-                <a href="#sponsors">Sponsors</a>
-            </div>
-            <div class="column has-text-centered nav-link">
-                <a href="#team">Team</a>
-            </div>
-            <div class="column has-text-centered nav-link">
-                <a href="">Contact</a>
-            </div>
-            <div class="column has-text-centered nav-link">
-                <a href="">
-                    Volunteer</a>
-            </div>
-            <div class="column"></div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-        </div> -->
+
 
         <div class="navbar" id="myNavbar">
                 <a href="#about">About</a>
-                <a href="faq">F.A.Q</a>
-                <a href="schedule">Schedule</a>
-                <a href="ws">Workshops</a>
-                <a href="sponsors">Sponsors</a>
-                <a href="team">Team</a>
+                <a href="#faq">F.A.Q</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#ws">Workshops</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="#team">Team</a>
                 <a href="https://madhacks-2018.typeform.com/to/NI8CP7">Contact</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKQfzy-b_TVmTXZOd1FKAl9baBXUzd_J6Gpc8AtbGZ8iODGw/viewform">Volunteer</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -322,10 +303,10 @@
             <h4 class="is-one-third column sponsor-header">Sponsors</h4>
             <div class="columns is-multiline">
                 <div class="column">
-                    <img src="images/google.png">
+                    <a href="https://careers.google.com/"><img src="images/google.png"></a>
                 </div>
                 <div class="column">
-                    <img src="images/mlh-logo.png">
+                    <a href="https://careers.mlh.io/"><img src="images/mlh-logo.png"></a>
                 </div>
 
             </div>
@@ -335,252 +316,104 @@
             </h3>
         </div>
 
+
         <div class="team" id="team">
-            <div class="backgroundImage">
-                <h2>The Team</h2>
-            </div>
+            <h2>The Team</h2>
             <div class="columns">
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/ian-mark/">
-                            <img src="./team/ian.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Ian Mark</div>
-                                    <br>MadHacks Director </h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/ian-mark/"><img src="team/ian.jpg"/>
+                    <p><span class="name"><strong>Ian Mark </strong></span></br> Madhacks Director</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="http://jeichenhofer.com/">
-                            <img src="./team/joe.jpeg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Joe Eichenhofer</div>
-                                    <br>MadHacks Assistant Director</h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="http://jeichenhofer.com/"><img src="team/joe.jpeg"/>
+                    <p><span class="name"><strong>Joe Eichenhofer</strong></span></br>MadHacks Assistant Director</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/jakehamel">
-                            <img src="./team/jake.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Jake Hamel</div>
-                                    <br> Support Coordinator</h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/jakehamel"><img src="team/jake.jpg"/>
+                    <p><span class="name"><strong>Jake Hamel</strong></span></br> Support Coordinator</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/andrew-nguyen-87a82987?trk=hp-identity-name">
-                            <img src="./team/andrew.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Andrew Nguyen </div>
-                                    <br>Web-development Coordinator</h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/andrew-nguyen-87a82987?trk=hp-identity-name"><img src="team/andrew.jpg"/>
+                    <p><span class="name"><strong>Andrew Nguyen</strong></span></br>Web-dev Coordinator</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/jeremy-koritzinsky-b9595a99/">
-                            <img src="./team/jeremy.png" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Jeremy Koritzinsky</div>
-                                    <br> Sponsorship Coordinator </h5>
-                        </a>
-                        </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/jeremy-koritzinsky-b9595a99/"><img src="team/jeremy.png"/>
+                    <p><span class="name"><strong>Jeremy Koritzinsky</strong></span></br>Sponsorship Coordinator</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/awlevin/">
-                            <img src="./team/aaron.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Aaron Levin</div>
-                                    <br> Sponsorship </h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/hjennye/"><img src="team/jenny.jpg"/>
+                    <p><span class="name"><strong>Haengjung Ye</strong></span></br>Mentorship Coordinator</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/karmnagi/">
-                            <img src="./team/karm.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name"> Karm Nagi</div>
-                                    <br> Sponsorship </h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/nathaniel-krakauer-4a202211a/"><img src="team/nathaniel.jpg"/>
+                    <p><span class="name"><strong>Nathaniel Krapauer</strong></span></br>PR Coordinator</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/hjennye/">
-                            <img src="./team/jenny.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Haengjung Ye </div>
-                                    <br> Mentorship Coordinator</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="image-container">
-                        <a href="http://johnmoss.us/">
-                            <img src="./team/john.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">John Moss</div>
-                                    <br> Web Developer</h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/aiden-hao-song/">
-                            <img src="./team/aiden.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Aiden Song</div>
-                                    <br> Web Developer</h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/daniel-m-701184b3/"><img src="team/danny.jpg"/>
+                    <p><span class="name"><strong>Danny Miller</strong></span></br>Sponsorship</p></a>
                 </div>
             </div>
             <div class="columns">
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/nathaniel-krakauer-4a202211a/">
-                            <img src="./team/nathaniel.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Nathaniel Krapauer</div>
-                                    <br> Public Relations Coordinator</h5>
-                        </a>
-                        </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/karmnagi/"><img src="team/karm.jpg"/>
+                    <p><span class="name"><strong>Karm Nagi</strong></span></br>Sponsorship</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/quinn-siebers-2515a964/">
-                            <img src="./team/quinn.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Quinn Siebers </div>
-                                    <br> Graphic Design</h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/aiden-hao-song/"><img src="team/aiden.jpg"/>
+                    <p><span class="name"><strong>Aiden Song</strong></span></br>Web Developer</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <img src="./team/monica.jpg" />
-                        <div class="after">
-                            <h5>
-                                <div class="name">Monica Ma </div>
-                                <br> Activities </h5>
-                        </div>
-                    </div>
+                    <a href="http://johnmoss.us/"><img src="team/john.jpg"/>
+                    <p><span class="name"><strong>John Moss</strong></span></br>Web Developer</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/connor-stamper-0168a3109/">
-                            <img src="./team/connor.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Connor Stamper</div>
-                                    <br> Web Developer</h5>
-                        </a>
-                        </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/connor-stamper-0168a3109/"><img src="team/connor.jpg"/>
+                    <p><span class="name"><strong>Connor Stamper</strong></span></br>Web Developer</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/udhbhav-gupta/">
-                            <img src="./team/ud.jpg" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">UD Gupta </div>
-                                    <br> Treasurer </h5>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/quinn-siebers-2515a964/"><img src="team/quinn.jpg"/>
+                    <p><span class="name"><strong>Quinn Siebers</strong></span></br>Graphic Design</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/yash-shah-bb8b29127">
-                            <img src="./team/shah.png" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Yash Shah </div>
-                                    <br> Travel Coordinator </h5>
-                            </div>
-                        </a>
-                    </div>
+                    <img src="team/monica.jpg"/>
+                    <p><span class="name"><strong>Monica Ma</strong></span></br>Activities</p>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-
-                        <img src="./team/p.png" />
-                        <div class="after">
-                            <h5>
-                                <div class="name">Matthew Parker </div>
-                                <br>Admission Coordinator</h5>
-                        </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/yash-shah-bb8b29127"><img src="team/shah.png"/>
+                    <p><span class="name"><strong>Yash Shah</strong></span></br>Travel</p></a>
                 </div>
                 <div class="column">
-                    <div class="image-container">
-                        <a href="https://www.linkedin.com/in/muhamad-firdaus-husaini-6a0b5113b/">
-                            <img src="./team/h.png" />
-                            <div class="after">
-                                <h5>
-                                    <div class="name">Muhamad Firdaus Husaini </div>
-                                    <br> Volenteer Coordinator </h5>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="image-container">
-
-                        <img src="./team/d.png" />
-                        <div class="after">
-                            <h5>
-                                <div class="name">Aniket Dalvi</div>
-                                <br> Food Coordinator</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="image-container">
-                        <img src="./team/y.png" />
-                        <div class="after">
-                            <h5>
-                                <div class="name">Benjamin Yin</div>
-                                <br> Admission </h5>
-                        </div>
-                    </div>
+                    <a href="https://www.linkedin.com/in/udhbhav-gupta/"><img src="team/ud.jpg"/>
+                    <p><span class="name"><strong>UD Gupta</strong></span></br>Treasurer</p></a>
                 </div>
             </div>
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column">
+                    <img src="team/p.png"/>
+                    <p><span class="name"><strong>Matthew Parker</strong></span></br>Admission Coordinator</p>
+                </div>
+                <div class="column">
+                    <img src="team/y.png"/>
+                    <p><span class="name"><strong>Benjamin Yin</strong></span></br>Admission</p>
+                </div>
+                <div class="column">
+                    <img src="team/h.png"/>
+                    <p><span class="name"><strong>Muhamad Firdaus Husaini</strong></span></br>Volunteer Coordinator</p>
+                </div>
+                <div class="column">
+                    <img src="team/y.png"/>
+                    <p><span class="name"><strong>Abujet Dalvi</strong></span></br>Food</p>
+                </div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+
         </div>
 
         <!--Footer-->
-        <div class="footer columns has-text-centered" id="contact">
+        <!-- <div class="footer columns has-text-centered" id="contact">
             <div class="column is-one-third" style="text-align: left;">
                 <a onclick="topFunction()" class="topLink">Back to the Top</a>
             </div>
@@ -595,7 +428,9 @@
             <div class="column is-one-third" style="text-align: right">
                 <a onclick="topFunction()">&copy 2018 MadHacks</a>
             </div>
-        </div>
+        </div> -->
+
+        </div> -->
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>

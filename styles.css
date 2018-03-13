@@ -28,6 +28,22 @@
     height: 150px;
     padding-top: 30px;
 }
+.iconOverlay{
+    position:absolute;
+    bottom:180px;
+    width:100%;
+    text-align: center;
+    height:100px;
+    padding:20px;
+}
+.iconOverlay a{
+    color:white;
+    padding:3px;
+}
+.iconOverlay a:hover{
+    opacity: 0.7;
+}
+
 
 .headerTopLeft {
     position: absolute;
@@ -308,7 +324,6 @@
     padding-left: 8px;
 }
 .workshops p {
-    /*font-size:1.3em;*/
     margin-top: 5px;
 }
 
@@ -351,13 +366,9 @@
 }
 
 .sponsors img {
-    max-height: 50px;
+    max-height: 100px;
     /* -webkit-filter: grayscale(80%);
     filter: grayscale(80%); */
-}
-
-.sponsors img:hover {
-    filter:none;
 }
 
 .sponsors h4 {
@@ -379,9 +390,16 @@
     font-weight: bold;
 }
 
-.team {
+
+
+
+
+
+.team{
     padding-bottom: 50px;
     padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #d6d8d8;
     text-align: center;
     margin-bottom: 0 !important;
@@ -389,14 +407,9 @@
     border-top: solid 5px #888;
 }
 
-
-/*
-.team .backgroundImage{
-    background:url(images/uwMadison.jpg);
-    opacity:0.7;
-    background-position: center;
+.team img{
+  border-radius: 50%;
 }
-*/
 
 .team h2 {
     color: #333;
@@ -412,56 +425,17 @@
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
-.team .columns {
-    padding-right:40px;
-    margin-left: 40px;
+.team .columns{
+    margin-left:40px;
     margin-right:40px;
-}
-
-.team h5 {
-    color:white;
-    font-size:0.3em;
-}
-.team .name {
-    font-size:1.4em;
-    text-decoration: underline;
 
 }
-
-.team .image-container {
-    position: relative;
+.team .columns .img{
+    padding:30px;
 }
-
-.team .image-container .after {
-    position: absolute;
-    top: -4px;
-    left: -1px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
-
+.team p{
+    color:#333;
 }
-.team .image-container:hover .after {
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
-    font-size:1.5em;
-    color:white;
-    text-align:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:absolute;
-    filter:grayscale(80%);
-
-}
-
-.team img {
-    border-radius: 50%;
-    filter:grayscale(30%);
-}
-
-
 /* maps */
 
 .small {
@@ -512,8 +486,8 @@
 }
 
 .footer {
-    height: 54px !important;
-    background-color: #b5271e;
+    height: 104px !important;
+    background-color:black;
     color: #ffffff;
     font-family: 'Play', sans-serif;
     padding-top: 0px;
