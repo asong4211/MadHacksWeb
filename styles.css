@@ -5,6 +5,9 @@
     left: 0;
     bottom: 0;
 }
+
+
+
 .head {
     height: 100%;
     width: 100%;
@@ -17,6 +20,8 @@
     position: absolute;
     top: 0;
     height: 100%;
+    mergin:0;
+    background: black;
 }
 
 .headerOverlay {
@@ -27,6 +32,22 @@
     height: 150px;
     padding-top: 30px;
 }
+.iconOverlay{
+    position:absolute;
+    bottom:180px;
+    width:100%;
+    text-align: center;
+    height:100px;
+    padding:20px;
+}
+.iconOverlay a{
+    color:white;
+    padding:3px;
+}
+.iconOverlay a:hover{
+    opacity: 0.7;
+}
+
 
 .headerTopLeft {
     position: absolute;
@@ -56,6 +77,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 .register-button {
     position: absolute;
     left: 50%;
@@ -81,36 +103,43 @@
 
 }
 
+/* Navigation bar */
 
 
-
-.nav {
-    position: absolute;
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
     background-color: #b5271e;
-    /* background-color:#DA2E2E; */
-    width: 100%;
-    margin-bottom: 0 !important;
-    margin-top: -59px;
-    font-family: 'Roboto Condensed','Play', sans-serif;
-    border-top: solid 5px #4f0f0c;
     overflow: hidden;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
 }
 
-.nav-link a {
-    color: white;
+/* Style the links inside the navigation bar */
+.navbar a {
+    margin: auto;
+    float: left;
     display: block;
-    height: 54px;
-    padding-top: 14px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Roboto Condensed','Play', sans-serif;
 }
 
-.nav-link:hover {
-    background-color: #962018;
+.navbar a:hover {
+    background-color:#962018;
+}
+
+.navbar .icon {
+    display: none;
 }
 
 
+/* About */
 .about {
-    margin-top: 30px;
     padding-top: 60px;
     padding-left: 40px;
     padding-right: 40px;
@@ -119,17 +148,10 @@
     color: #ffffff;
     font-family: 'Roboto Condensed','Play', sans-serif;
     margin-bottom: 0 !important;
-    /* border-top: solid 5px #111; */
+    border-top: solid 5px #111;
 }
 
 
-/* .twitter {
-
-    text-align: center;
-    padding-top: 30px;
-    text-transform: uppercase;
-    font-weight: 900;
-} */
 
 .twitter {
     text-align: center;
@@ -305,7 +327,6 @@
     padding-left: 8px;
 }
 .workshops p {
-    /*font-size:1.3em;*/
     margin-top: 5px;
 }
 
@@ -348,13 +369,19 @@
 }
 
 .sponsors img {
-    max-height: 50px;
-    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
-}
+    max-height: 100px;
+    /* -webkit-filter: grayscale(80%);
+    filter: grayscale(80%); */
 
-.sponsors img:hover {
-    filter:none;
+    -webkit-filter: saturate(20%) invert(20%);
+    filter: saturate(20%) invert(20%);
+    opacity: 0.8;
+    transition-property: filter opacity;
+    transition-duration: 1.5s;
+}
+.sponsors img:hover{
+    filter: saturate(100%);
+    opacity: 1;
 }
 
 .sponsors h4 {
@@ -376,9 +403,12 @@
     font-weight: bold;
 }
 
-.team {
+
+.team{
     padding-bottom: 50px;
     padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #d6d8d8;
     text-align: center;
     margin-bottom: 0 !important;
@@ -386,14 +416,11 @@
     border-top: solid 5px #888;
 }
 
-
-/*
-.team .backgroundImage{
-    background:url(images/uwMadison.jpg);
-    opacity:0.7;
-    background-position: center;
+.team img{
+  border-radius: 50%;
+  padding: 5px;
+  filter:grayscale(0.4);
 }
-*/
 
 .team h2 {
     color: #333;
@@ -409,56 +436,19 @@
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
-.team .columns {
-    padding-right:40px;
-    margin-left: 40px;
+.team .columns{
+    margin-left:40px;
     margin-right:40px;
-}
-
-.team h5 {
-    color:white;
-    font-size:0.3em;
-}
-.team .name {
-    font-size:1.4em;
-    text-decoration: underline;
 
 }
 
-.team .image-container {
-    position: relative;
-}
-
-.team .image-container .after {
-    position: absolute;
-    top: -4px;
-    left: -1px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FFF;
+.team img:hover{
+    filter:none
 
 }
-.team .image-container:hover .after {
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.4);
-    font-size:1.5em;
-    color:white;
-    text-align:center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:absolute;
-    filter:grayscale(80%);
-
+.team p{
+    color:#333;
 }
-
-.team img {
-    border-radius: 50%;
-    filter:grayscale(30%);
-}
-
-
 /* maps */
 
 .small {
@@ -466,10 +456,11 @@
 }
 
 #map {
-    position: relative;
-    top: 0;
-    bottom: 0;
+    position:relative;
+    top: 10;
+    bottom: 10;
     width: 100%;
+    height:100%;
     border-top: solid 5px #1d2330;
     background-color: #000;
 }
@@ -509,8 +500,8 @@
 }
 
 .footer {
-    height: 54px !important;
-    background-color: #b5271e;
+    height: 104px !important;
+    background-color:black;
     color: #ffffff;
     font-family: 'Play', sans-serif;
     padding-top: 0px;
@@ -527,3 +518,46 @@
     text-decoration: none;
 }
 #loadOverlay{display: none;}
+
+@media screen and (max-width: 600px) {
+  .mlhLogo{
+      display: none;
+  }
+  .headerTopLeft img{
+    width: 90%;
+  }
+  .headerTopLeft h4{
+    font-size: 0.95em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar a{display: none;}
+  .navbar a.icon {
+    font-size: 1.5em;
+    padding-left: 20px;
+    padding-top:10px;
+    padding-right:35px;
+    padding-bottom:40px;
+    float: left;
+    display: block;
+    text-align: center;
+  }
+  #map{
+     width:100%;
+     height:70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive a.icon {
+    position: absolute;
+    left:0;
+    bottom: 0;
+  }
+  .navbar.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
